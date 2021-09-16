@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
---Date        : Wed Sep 15 21:49:12 2021
+--Date        : Wed Sep 15 22:19:04 2021
 --Host        : ece38 running 64-bit Ubuntu 20.04.2 LTS
 --Command     : generate_target zynq_interrupt_system_wrapper.bd
 --Design      : zynq_interrupt_system_wrapper
@@ -42,6 +42,10 @@ end zynq_interrupt_system_wrapper;
 architecture STRUCTURE of zynq_interrupt_system_wrapper is
   component zynq_interrupt_system is
   port (
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -62,11 +66,7 @@ architecture STRUCTURE of zynq_interrupt_system_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component zynq_interrupt_system;
   component IOBUF is
