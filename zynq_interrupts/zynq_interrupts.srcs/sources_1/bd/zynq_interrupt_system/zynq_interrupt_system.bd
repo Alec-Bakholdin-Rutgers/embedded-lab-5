@@ -14,6 +14,8 @@
       "processing_system7_0": "",
       "axi_gpio_0": "",
       "axi_gpio_1": "",
+      "axi_timer_0": "",
+      "xlconcat_0": "",
       "ps7_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {
@@ -23,9 +25,7 @@
         "m01_couplers": {},
         "m02_couplers": {}
       },
-      "rst_ps7_0_100M": "",
-      "axi_timer_0": "",
-      "xlconcat_0": ""
+      "rst_ps7_0_100M": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1052,6 +1052,18 @@
           }
         }
       },
+      "axi_timer_0": {
+        "vlnv": "xilinx.com:ip:axi_timer:2.0",
+        "xci_name": "zynq_interrupt_system_axi_timer_0_0",
+        "xci_path": "ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xci",
+        "inst_hier_path": "axi_timer_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "zynq_interrupt_system_xlconcat_0_0",
+        "xci_path": "ip/zynq_interrupt_system_xlconcat_0_0/zynq_interrupt_system_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
+      },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip/zynq_interrupt_system_ps7_0_axi_periph_0/zynq_interrupt_system_ps7_0_axi_periph_0.xci",
@@ -1548,18 +1560,6 @@
         "xci_name": "zynq_interrupt_system_rst_ps7_0_100M_0",
         "xci_path": "ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
-      },
-      "axi_timer_0": {
-        "vlnv": "xilinx.com:ip:axi_timer:2.0",
-        "xci_name": "zynq_interrupt_system_axi_timer_0_0",
-        "xci_path": "ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xci",
-        "inst_hier_path": "axi_timer_0"
-      },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "xci_name": "zynq_interrupt_system_xlconcat_0_0",
-        "xci_path": "ip/zynq_interrupt_system_xlconcat_0_0/zynq_interrupt_system_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0"
       }
     },
     "interface_nets": {

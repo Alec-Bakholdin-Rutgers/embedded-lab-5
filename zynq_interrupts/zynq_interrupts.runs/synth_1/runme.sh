@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/synth_1'
+HD_PWD='/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,12 +2,12 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Sep 15 22:19:24 2021
-# Process ID: 295282
-# Current directory: /home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1
+# Start of session at: Wed Sep 22 21:29:57 2021
+# Process ID: 355882
+# Current directory: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1
 # Command line: vivado -log zynq_interrupt_system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_interrupt_system_xbar_0.tcl
-# Log file: /home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.vds
-# Journal file: /home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/vivado.jou
+# Log file: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.vds
+# Journal file: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source zynq_interrupt_system_xbar_0.tcl -notrace
 Command: synth_design -top zynq_interrupt_system_xbar_0 -part xc7z010clg400-1 -mode out_of_context
@@ -17,91 +17,91 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 295552
+INFO: [Synth 8-7075] Helper process launched with PID 356228
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.094 ; gain = 0.000 ; free physical = 333 ; free virtual = 16241
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2478.090 ; gain = 0.000 ; free physical = 1796 ; free virtual = 18032
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'zynq_interrupt_system_xbar_0' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/synth/zynq_interrupt_system_xbar_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' (3#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' (4#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' (5#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter' (6#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' (6#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' (8#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' (9#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' (10#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_interrupt_system_xbar_0' (11#1) [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/synth/zynq_interrupt_system_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'zynq_interrupt_system_xbar_0' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/synth/zynq_interrupt_system_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' (3#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' (4#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' (5#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter' (6#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' (6#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' (8#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' (9#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' (10#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_interrupt_system_xbar_0' (11#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/synth/zynq_interrupt_system_xbar_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2468.094 ; gain = 0.000 ; free physical = 2053 ; free virtual = 17962
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2478.090 ; gain = 0.000 ; free physical = 2836 ; free virtual = 19072
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2468.094 ; gain = 0.000 ; free physical = 2123 ; free virtual = 18033
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2478.090 ; gain = 0.000 ; free physical = 2748 ; free virtual = 19000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2468.094 ; gain = 0.000 ; free physical = 2123 ; free virtual = 18033
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2478.090 ; gain = 0.000 ; free physical = 2748 ; free virtual = 19000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2468.094 ; gain = 0.000 ; free physical = 2118 ; free virtual = 18028
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2478.090 ; gain = 0.000 ; free physical = 2737 ; free virtual = 18989
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.004 ; gain = 0.000 ; free physical = 1957 ; free virtual = 17887
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2542.000 ; gain = 0.000 ; free physical = 2587 ; free virtual = 18839
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2532.004 ; gain = 0.000 ; free physical = 1957 ; free virtual = 17887
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2542.000 ; gain = 0.000 ; free physical = 2584 ; free virtual = 18836
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1930 ; free virtual = 17860
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2661 ; free virtual = 18897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1930 ; free virtual = 17860
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2661 ; free virtual = 18897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1929 ; free virtual = 17860
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2661 ; free virtual = 18897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1923 ; free virtual = 17838
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2640 ; free virtual = 18876
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -136,25 +136,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1683 ; free virtual = 17598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2542 ; free virtual = 18778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1837 ; free virtual = 17752
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2598 ; free virtual = 18834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1878 ; free virtual = 17793
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2564 ; free virtual = 18800
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 1975 ; free virtual = 17890
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2550 ; free virtual = 18786
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -172,37 +172,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2583 ; free virtual = 18819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2584 ; free virtual = 18820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2611 ; free virtual = 18847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2614 ; free virtual = 18850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2625 ; free virtual = 18861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2628 ; free virtual = 18864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -227,16 +227,16 @@ Report Cell Usage:
 |7     |FDRE |   131|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2065 ; free virtual = 17981
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2631 ; free virtual = 18867
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2532.004 ; gain = 0.000 ; free physical = 2120 ; free virtual = 18035
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.004 ; gain = 63.910 ; free physical = 2120 ; free virtual = 18035
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2542.000 ; gain = 0.000 ; free physical = 2777 ; free virtual = 19013
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2542.000 ; gain = 63.910 ; free physical = 2777 ; free virtual = 19013
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.004 ; gain = 0.000 ; free physical = 2208 ; free virtual = 18123
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2542.000 ; gain = 0.000 ; free physical = 3394 ; free virtual = 19631
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.004 ; gain = 0.000 ; free physical = 2144 ; free virtual = 18060
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2542.000 ; gain = 0.000 ; free physical = 3331 ; free virtual = 19568
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -244,10 +244,10 @@ Synth Design complete, checksum: f64d4f42
 INFO: [Common 17-83] Releasing license: Synthesis
 46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 2532.004 ; gain = 64.031 ; free physical = 2309 ; free virtual = 18225
-INFO: [Common 17-1381] The checkpoint '/home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_xbar_0, cache-ID = d0c2ab724522007e
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 2542.000 ; gain = 64.031 ; free physical = 3480 ; free virtual = 19717
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_xbar_0, cache-ID = a2c053c21b2f0d5c
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/user/lab_2/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_xbar_0_synth_1/zynq_interrupt_system_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zynq_interrupt_system_xbar_0_utilization_synth.rpt -pb zynq_interrupt_system_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 15 22:20:01 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 22 21:30:36 2021...

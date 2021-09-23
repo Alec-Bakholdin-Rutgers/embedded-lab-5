@@ -13,8 +13,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interr
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_1_0/zynq_interrupt_system_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_axi_gpio_1_0 || ORIG_REF_NAME==zynq_interrupt_system_axi_gpio_1_0} -quiet] -quiet
 
+# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_axi_timer_0_0 || ORIG_REF_NAME==zynq_interrupt_system_axi_timer_0_0} -quiet] -quiet
+
+# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_xlconcat_0_0/zynq_interrupt_system_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_xlconcat_0_0 || ORIG_REF_NAME==zynq_interrupt_system_xlconcat_0_0} -quiet] -quiet
+
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_xbar_0 || ORIG_REF_NAME==zynq_interrupt_system_xbar_0} -quiet] -quiet
+
+# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_auto_pc_0 || ORIG_REF_NAME==zynq_interrupt_system_auto_pc_0} -quiet] -quiet
 
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_ps7_0_axi_periph_0/zynq_interrupt_system_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_ps7_0_axi_periph_0 || ORIG_REF_NAME==zynq_interrupt_system_ps7_0_axi_periph_0} -quiet] -quiet
@@ -22,13 +31,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interr
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_rst_ps7_0_100M_0 || ORIG_REF_NAME==zynq_interrupt_system_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_axi_timer_0_0 || ORIG_REF_NAME==zynq_interrupt_system_axi_timer_0_0} -quiet] -quiet
-
-# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_xlconcat_0_0/zynq_interrupt_system_xlconcat_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_xlconcat_0_0 || ORIG_REF_NAME==zynq_interrupt_system_xlconcat_0_0} -quiet] -quiet
-
-# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_auto_pc_0 || ORIG_REF_NAME==zynq_interrupt_system_auto_pc_0} -quiet] -quiet
-
-# XDC: /home/user/lab_2/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system_ooc.xdc
+# XDC: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system_ooc.xdc
