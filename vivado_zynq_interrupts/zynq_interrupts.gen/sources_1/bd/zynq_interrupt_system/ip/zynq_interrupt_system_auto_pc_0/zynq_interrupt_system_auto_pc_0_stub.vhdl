@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
 -- Date        : Wed Sep 22 21:30:38 2021
 -- Host        : ece33 running 64-bit Ubuntu 20.04.2 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top zynq_interrupt_system_auto_pc_0 -prefix
+--               zynq_interrupt_system_auto_pc_0_ zynq_interrupt_system_auto_pc_0_stub.vhdl
 -- Design      : zynq_interrupt_system_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

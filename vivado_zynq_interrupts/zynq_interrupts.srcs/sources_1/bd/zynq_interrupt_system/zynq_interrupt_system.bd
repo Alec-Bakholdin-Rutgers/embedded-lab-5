@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC9B823CC16F4AFB4",
+      "boundary_crc": "0xCFCA091DA5C59172",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system",
       "name": "zynq_interrupt_system",
@@ -12,10 +12,7 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "axi_gpio_0": "",
-      "axi_gpio_1": "",
       "axi_timer_0": "",
-      "xlconcat_0": "",
       "ps7_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {
@@ -25,7 +22,8 @@
         "m01_couplers": {},
         "m02_couplers": {}
       },
-      "rst_ps7_0_100M": ""
+      "rst_ps7_0_100M": "",
+      "axi_gpio_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -93,11 +91,6 @@
             "value_src": "default"
           }
         }
-      },
-      "btns_4bits": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       },
       "leds_4bits": {
         "mode": "Master",
@@ -1021,48 +1014,11 @@
           }
         }
       },
-      "axi_gpio_0": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "zynq_interrupt_system_axi_gpio_0_0",
-        "xci_path": "ip/zynq_interrupt_system_axi_gpio_0_0/zynq_interrupt_system_axi_gpio_0_0.xci",
-        "inst_hier_path": "axi_gpio_0",
-        "parameters": {
-          "C_INTERRUPT_PRESENT": {
-            "value": "1"
-          },
-          "GPIO_BOARD_INTERFACE": {
-            "value": "btns_4bits"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "axi_gpio_1": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "zynq_interrupt_system_axi_gpio_1_0",
-        "xci_path": "ip/zynq_interrupt_system_axi_gpio_1_0/zynq_interrupt_system_axi_gpio_1_0.xci",
-        "inst_hier_path": "axi_gpio_1",
-        "parameters": {
-          "GPIO_BOARD_INTERFACE": {
-            "value": "leds_4bits"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
       "axi_timer_0": {
         "vlnv": "xilinx.com:ip:axi_timer:2.0",
         "xci_name": "zynq_interrupt_system_axi_timer_0_0",
         "xci_path": "ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xci",
         "inst_hier_path": "axi_timer_0"
-      },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "xci_name": "zynq_interrupt_system_xlconcat_0_0",
-        "xci_path": "ip/zynq_interrupt_system_xlconcat_0_0/zynq_interrupt_system_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0"
       },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
@@ -1560,19 +1516,27 @@
         "xci_name": "zynq_interrupt_system_rst_ps7_0_100M_0",
         "xci_path": "ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
+      },
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "zynq_interrupt_system_axi_gpio_0_1",
+        "xci_path": "ip/zynq_interrupt_system_axi_gpio_0_1/zynq_interrupt_system_axi_gpio_0_1.xci",
+        "inst_hier_path": "axi_gpio_0",
+        "parameters": {
+          "GPIO_BOARD_INTERFACE": {
+            "value": "leds_4bits"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
       "axi_gpio_0_GPIO": {
         "interface_ports": [
-          "btns_4bits",
-          "axi_gpio_0/GPIO"
-        ]
-      },
-      "axi_gpio_1_GPIO": {
-        "interface_ports": [
           "leds_4bits",
-          "axi_gpio_1/GPIO"
+          "axi_gpio_0/GPIO"
         ]
       },
       "processing_system7_0_DDR": {
@@ -1599,12 +1563,6 @@
           "axi_gpio_0/S_AXI"
         ]
       },
-      "ps7_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M01_AXI",
-          "axi_gpio_1/S_AXI"
-        ]
-      },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
@@ -1613,16 +1571,10 @@
       }
     },
     "nets": {
-      "axi_gpio_0_ip2intc_irpt": {
-        "ports": [
-          "axi_gpio_0/ip2intc_irpt",
-          "xlconcat_0/In0"
-        ]
-      },
       "axi_timer_0_interrupt": {
         "ports": [
           "axi_timer_0/interrupt",
-          "xlconcat_0/In1"
+          "processing_system7_0/IRQ_F2P"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -1631,13 +1583,12 @@
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "rst_ps7_0_100M/slowest_sync_clk",
-          "axi_gpio_0/s_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "axi_gpio_1/s_axi_aclk",
           "ps7_0_axi_periph/M01_ACLK",
           "axi_timer_0/s_axi_aclk",
-          "ps7_0_axi_periph/M02_ACLK"
+          "ps7_0_axi_periph/M02_ACLK",
+          "axi_gpio_0/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1650,19 +1601,12 @@
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "axi_gpio_0/s_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
-          "axi_gpio_1/s_axi_aresetn",
           "ps7_0_axi_periph/M01_ARESETN",
           "axi_timer_0/s_axi_aresetn",
-          "ps7_0_axi_periph/M02_ARESETN"
-        ]
-      },
-      "xlconcat_0_dout": {
-        "ports": [
-          "xlconcat_0/dout",
-          "processing_system7_0/IRQ_F2P"
+          "ps7_0_axi_periph/M02_ARESETN",
+          "axi_gpio_0/s_axi_aresetn"
         ]
       }
     },
@@ -1674,11 +1618,6 @@
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",
                 "offset": "0x41200000",
-                "range": "64K"
-              },
-              "SEG_axi_gpio_1_Reg": {
-                "address_block": "/axi_gpio_1/S_AXI/Reg",
-                "offset": "0x41210000",
                 "range": "64K"
               },
               "SEG_axi_timer_0_Reg": {
