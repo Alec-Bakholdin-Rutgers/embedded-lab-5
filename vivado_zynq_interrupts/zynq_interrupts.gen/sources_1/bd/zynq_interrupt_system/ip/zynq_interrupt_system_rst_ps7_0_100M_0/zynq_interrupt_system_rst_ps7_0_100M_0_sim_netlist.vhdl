@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
--- Date        : Wed Sep 22 21:30:31 2021
--- Host        : ece33 running 64-bit Ubuntu 20.04.2 LTS
+-- Date        : Wed Nov  3 20:55:07 2021
+-- Host        : ece36 running 64-bit Ubuntu 20.04.2 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_sim_netlist.vhdl
+--               /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : zynq_interrupt_system_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1096,7 +1096,7 @@ architecture STRUCTURE of zynq_interrupt_system_rst_ps7_0_100M_0 is
   attribute x_interface_info of mb_reset : signal is "xilinx.com:signal:reset:1.0 mb_rst RST";
   attribute x_interface_parameter of mb_reset : signal is "XIL_INTERFACENAME mb_rst, POLARITY ACTIVE_HIGH, TYPE PROCESSOR, INSERT_VIP 0";
   attribute x_interface_info of slowest_sync_clk : signal is "xilinx.com:signal:clock:1.0 clock CLK";
-  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN zynq_interrupt_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN zynq_interrupt_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of bus_struct_reset : signal is "xilinx.com:signal:reset:1.0 bus_struct_reset RST";
   attribute x_interface_parameter of bus_struct_reset : signal is "XIL_INTERFACENAME bus_struct_reset, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT, INSERT_VIP 0";
   attribute x_interface_info of interconnect_aresetn : signal is "xilinx.com:signal:reset:1.0 interconnect_low_rst RST";

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/synth_1/zynq_interrupt_system_wrapper.tcl"
+  variable script "/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/synth_1/zynq_interrupt_system_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -77,30 +78,27 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.cache/wt [current_project]
-set_property parent.project_path /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.xpr [current_project]
+set_property webtalk.parent_dir /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.cache/wt [current_project]
+set_property parent.project_path /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_output_repo /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.cache/ip [current_project]
+set_property ip_output_repo /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/hdl/zynq_interrupt_system_wrapper.v
-add_files /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_1/zynq_interrupt_system_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_1/zynq_interrupt_system_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_1/zynq_interrupt_system_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system_ooc.xdc]
+read_verilog -library xil_defaultlib /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/hdl/zynq_interrupt_system_wrapper.v
+add_files /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_timer_0_0/zynq_interrupt_system_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -111,6 +109,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.srcs/constrs_1/new/constraints.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

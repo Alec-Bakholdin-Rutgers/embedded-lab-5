@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper"/>
+	<item key="sdx.custom.platform.repository.locations" value="/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper;/home/user/lab-5/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper"/>
 </section>

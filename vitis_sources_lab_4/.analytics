@@ -18,3 +18,26 @@ timestamp=[2021-10-27 22:04:21], mode=BUILD, duration=0:00:00.573, duration_ms=5
 timestamp=[2021-10-27 22:06:34], mode=BUILD, duration=0:00:00.573, duration_ms=573, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
 timestamp=[2021-10-27 22:09:48], mode=BUILD, duration=0:00:00.587, duration_ms=587, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
 timestamp=[2021-10-27 22:10:34], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:03:56], mode=WORKBENCH_START, duration=0:00:06.718, duration_ms=6718, data={}
+timestamp=[2021-11-03 21:03:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.027, duration_ms=27, data={}
+timestamp=[2021-11-03 21:03:57], mode=WORKBENCH_UI_INIT, duration=0:00:01.169, duration_ms=1169, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,pwm_axi_timer,pwm_axi_timer_system,zynq_interrupt_system_wrapper}
+timestamp=[2021-11-03 21:14:37], mode=PLATFORM_GENERATION, duration=0:00:11.620, duration_ms=11620, data={name=zynq_interrupt_system_wrapper}
+timestamp=[2021-11-03 21:14:39], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:17:59], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:51:31], mode=PLATFORM_GENERATION, duration=0:00:08.011, duration_ms=8011, data={name=zynq_interrupt_system_wrapper}
+timestamp=[2021-11-03 21:51:34], mode=BUILD, duration=0:00:00.591, duration_ms=591, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:51:41], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:54:05], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 21:56:10], mode=WORKBENCH_START, duration=0:00:06.104, duration_ms=6104, data={}
+timestamp=[2021-11-03 21:56:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.036, duration_ms=36, data={}
+timestamp=[2021-11-03 21:56:11], mode=WORKBENCH_UI_INIT, duration=0:00:01.308, duration_ms=1308, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,pwm_axi_timer,pwm_axi_timer_system,zynq_interrupt_system_wrapper}
+timestamp=[2021-11-03 22:02:05], mode=BUILD, duration=0:00:00.521, duration_ms=521, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:03:14], mode=BUILD, duration=0:00:00.520, duration_ms=520, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:03:45], mode=BUILD, duration=0:00:00.519, duration_ms=519, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:03:55], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:04:36], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:06:13], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:10:29], mode=BUILD, duration=0:00:00.568, duration_ms=568, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:17:12], mode=BUILD, duration=0:00:00.573, duration_ms=573, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:23:07], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}
+timestamp=[2021-11-03 22:24:48], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=pwm_axi_timer, configuration=Debug, clean_build=false}

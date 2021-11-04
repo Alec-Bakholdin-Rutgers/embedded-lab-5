@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Wed Oct 27 20:55:29 2021
+//Date        : Wed Nov  3 21:42:40 2021
 //Host        : ece36 running 64-bit Ubuntu 20.04.2 LTS
 //Command     : generate_target zynq_interrupt_system_wrapper.bd
 //Design      : zynq_interrupt_system_wrapper
@@ -31,7 +31,7 @@ module zynq_interrupt_system_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    leds_4bits_tri_o);
+    pwm0_0);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -53,7 +53,7 @@ module zynq_interrupt_system_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [3:0]leds_4bits_tri_o;
+  output pwm0_0;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -76,7 +76,7 @@ module zynq_interrupt_system_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [3:0]leds_4bits_tri_o;
+  wire pwm0_0;
 
   zynq_interrupt_system zynq_interrupt_system_i
        (.DDR_addr(DDR_addr),
@@ -100,5 +100,5 @@ module zynq_interrupt_system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .leds_4bits_tri_o(leds_4bits_tri_o));
+        .pwm0_0(pwm0_0));
 endmodule

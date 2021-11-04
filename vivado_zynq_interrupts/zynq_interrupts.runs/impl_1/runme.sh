@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/impl_1'
+HD_PWD='/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

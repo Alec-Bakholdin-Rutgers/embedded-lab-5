@@ -2,12 +2,12 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Sep 22 21:29:57 2021
-# Process ID: 355792
-# Current directory: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1
+# Start of session at: Wed Nov  3 20:54:34 2021
+# Process ID: 66937
+# Current directory: /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1
 # Command line: vivado -log zynq_interrupt_system_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_interrupt_system_rst_ps7_0_100M_0.tcl
-# Log file: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.vds
-# Journal file: /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/vivado.jou
+# Log file: /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.vds
+# Journal file: /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source zynq_interrupt_system_rst_ps7_0_100M_0.tcl -notrace
 Command: synth_design -top zynq_interrupt_system_rst_ps7_0_100M_0 -part xc7z010clg400-1 -mode out_of_context
@@ -17,11 +17,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 356192
+INFO: [Synth 8-7075] Helper process launched with PID 67314
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2471.090 ; gain = 0.000 ; free physical = 2388 ; free virtual = 18624
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2468.195 ; gain = 0.000 ; free physical = 2985 ; free virtual = 20452
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'zynq_interrupt_system_rst_ps7_0_100M_0' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'zynq_interrupt_system_rst_ps7_0_100M_0' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -31,98 +31,98 @@ INFO: [Synth 8-638] synthesizing module 'zynq_interrupt_system_rst_ps7_0_100M_0'
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (1#1) [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'zynq_interrupt_system_rst_ps7_0_100M_0' (7#1) [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'zynq_interrupt_system_rst_ps7_0_100M_0' (7#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/synth/zynq_interrupt_system_rst_ps7_0_100M_0.vhd:74]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2471.090 ; gain = 0.000 ; free physical = 434 ; free virtual = 16670
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.195 ; gain = 0.000 ; free physical = 568 ; free virtual = 18038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2471.090 ; gain = 0.000 ; free physical = 985 ; free virtual = 17221
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.195 ; gain = 0.000 ; free physical = 160 ; free virtual = 17500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2471.090 ; gain = 0.000 ; free physical = 985 ; free virtual = 17221
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.195 ; gain = 0.000 ; free physical = 159 ; free virtual = 17500
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2471.090 ; gain = 0.000 ; free physical = 980 ; free virtual = 17216
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2468.195 ; gain = 0.000 ; free physical = 981 ; free virtual = 18267
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
-Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.000 ; gain = 0.000 ; free physical = 2514 ; free virtual = 18750
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.098 ; gain = 0.000 ; free physical = 3144 ; free virtual = 20435
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2535.000 ; gain = 0.000 ; free physical = 2514 ; free virtual = 18750
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2532.098 ; gain = 0.000 ; free physical = 3142 ; free virtual = 20434
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2760 ; free virtual = 19012
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3323 ; free virtual = 20617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2759 ; free virtual = 19011
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3323 ; free virtual = 20616
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2757 ; free virtual = 19009
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3322 ; free virtual = 20616
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2705 ; free virtual = 18957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3340 ; free virtual = 20636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -153,25 +153,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2598 ; free virtual = 18850
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3210 ; free virtual = 20507
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2536 ; free virtual = 18772
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3039 ; free virtual = 20338
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2536 ; free virtual = 18772
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3037 ; free virtual = 20337
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2528 ; free virtual = 18764
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 3032 ; free virtual = 20332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -189,37 +189,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2464 ; free virtual = 18700
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2668 ; free virtual = 19969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2464 ; free virtual = 18700
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2668 ; free virtual = 19969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2464 ; free virtual = 18700
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2668 ; free virtual = 19968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2464 ; free virtual = 18700
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2667 ; free virtual = 19968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2463 ; free virtual = 18699
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2667 ; free virtual = 19967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2463 ; free virtual = 18699
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2667 ; free virtual = 19967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -247,18 +247,18 @@ Report Cell Usage:
 |10    |FDSE  |     4|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2463 ; free virtual = 18699
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2667 ; free virtual = 19967
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.000 ; gain = 0.000 ; free physical = 2518 ; free virtual = 18754
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2535.000 ; gain = 63.910 ; free physical = 2518 ; free virtual = 18754
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2532.098 ; gain = 0.000 ; free physical = 2712 ; free virtual = 20012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2532.098 ; gain = 63.902 ; free physical = 2712 ; free virtual = 20012
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.000 ; gain = 0.000 ; free physical = 2511 ; free virtual = 18747
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.098 ; gain = 0.000 ; free physical = 2704 ; free virtual = 20005
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.000 ; gain = 0.000 ; free physical = 2525 ; free virtual = 18761
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.098 ; gain = 0.000 ; free physical = 2694 ; free virtual = 19998
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 8 instances
@@ -268,10 +268,10 @@ Synth Design complete, checksum: 1d48d29c
 INFO: [Common 17-83] Releasing license: Synthesis
 43 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 2535.000 ; gain = 64.031 ; free physical = 2673 ; free virtual = 18909
-INFO: [Common 17-1381] The checkpoint '/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_rst_ps7_0_100M_0, cache-ID = b13cf04e86e70174
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2532.098 ; gain = 64.031 ; free physical = 2857 ; free virtual = 20161
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_rst_ps7_0_100M_0, cache-ID = ab05f95e3c29dcc8
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/user/lab-2-Alec-Bakholdin-Rutgers/zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_rst_ps7_0_100M_0_synth_1/zynq_interrupt_system_rst_ps7_0_100M_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zynq_interrupt_system_rst_ps7_0_100M_0_utilization_synth.rpt -pb zynq_interrupt_system_rst_ps7_0_100M_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 22 21:30:32 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  3 20:55:07 2021...

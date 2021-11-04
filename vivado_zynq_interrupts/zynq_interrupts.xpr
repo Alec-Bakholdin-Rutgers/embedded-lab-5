@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="55" Path="/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.xpr">
+<Project Version="7" Minor="55" Path="/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f8f970a535024950aba19b103af9a412"/>
@@ -98,6 +98,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="zynq_interrupt_system.bd" FileRelPathName="ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="zynq_interrupt_system_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="zynq_interrupt_system.bd" FileRelPathName="ip/zynq_interrupt_system_xbar_0/zynq_interrupt_system_xbar_0.xci">
           <Proxy FileSetName="zynq_interrupt_system_xbar_0"/>
         </CompFileExtendedInfo>
@@ -106,9 +109,6 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="zynq_interrupt_system.bd" FileRelPathName="ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xci">
           <Proxy FileSetName="zynq_interrupt_system_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="zynq_interrupt_system.bd" FileRelPathName="ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="zynq_interrupt_system_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/zynq_interrupt_system/hdl/zynq_interrupt_system_wrapper.v">
@@ -126,7 +126,14 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>

@@ -22,3 +22,8 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform active {zynq_interrupt_system_wrapper}
+platform config -updatehw {/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupt_system_wrapper.xsa}
+platform generate
+platform config -updatehw {/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupt_system_wrapper.xsa}
+platform generate -domains 

@@ -16,83 +16,83 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 672685
+INFO: [Synth 8-7075] Helper process launched with PID 67377
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.258 ; gain = 0.000 ; free physical = 758 ; free virtual = 18640
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2465.230 ; gain = 0.000 ; free physical = 571 ; free virtual = 18041
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'zynq_interrupt_system_processing_system7_0_0' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+INFO: [Synth 8-6157] synthesizing module 'zynq_interrupt_system_processing_system7_0_0' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84961]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [/home/software/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84961]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_interrupt_system_processing_system7_0_0' (5#1) [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_interrupt_system_processing_system7_0_0' (5#1) [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/synth/zynq_interrupt_system_processing_system7_0_0.v:60]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2478.258 ; gain = 0.000 ; free physical = 668 ; free virtual = 18380
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2465.230 ; gain = 0.000 ; free physical = 2382 ; free virtual = 19670
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2478.258 ; gain = 0.000 ; free physical = 1381 ; free virtual = 19094
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2465.230 ; gain = 0.000 ; free physical = 2426 ; free virtual = 19715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2478.258 ; gain = 0.000 ; free physical = 1381 ; free virtual = 19094
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2465.230 ; gain = 0.000 ; free physical = 2426 ; free virtual = 19715
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2478.258 ; gain = 0.000 ; free physical = 2194 ; free virtual = 19908
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2465.230 ; gain = 0.000 ; free physical = 3236 ; free virtual = 20526
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynq_interrupt_system_processing_system7_0_0_propImpl.xdc].
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_processing_system7_0_0/zynq_interrupt_system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynq_interrupt_system_processing_system7_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/zynq_interrupt_system_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2542.160 ; gain = 0.000 ; free physical = 2029 ; free virtual = 19758
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2529.133 ; gain = 0.000 ; free physical = 3097 ; free virtual = 20391
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2542.160 ; gain = 0.000 ; free physical = 2024 ; free virtual = 19753
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2529.133 ; gain = 0.000 ; free physical = 3091 ; free virtual = 20385
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 2271 ; free virtual = 19993
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 3307 ; free virtual = 20605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 2270 ; free virtual = 19992
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 3306 ; free virtual = 20604
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 2241 ; free virtual = 19963
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 3257 ; free virtual = 20554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 2214 ; free virtual = 19938
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 3232 ; free virtual = 20530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -114,25 +114,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 2229 ; free virtual = 19954
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 3234 ; free virtual = 20532
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1773 ; free virtual = 19499
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2725 ; free virtual = 20025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1759 ; free virtual = 19485
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2719 ; free virtual = 20019
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1759 ; free virtual = 19485
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2695 ; free virtual = 19995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -150,37 +150,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -202,16 +202,16 @@ Report Cell Usage:
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1887 ; free virtual = 19620
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2799 ; free virtual = 20106
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2542.160 ; gain = 0.000 ; free physical = 1943 ; free virtual = 19675
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2542.160 ; gain = 63.902 ; free physical = 1943 ; free virtual = 19676
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2529.133 ; gain = 0.000 ; free physical = 2855 ; free virtual = 20162
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2529.133 ; gain = 63.902 ; free physical = 2855 ; free virtual = 20162
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2542.160 ; gain = 0.000 ; free physical = 1927 ; free virtual = 19660
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2529.133 ; gain = 0.000 ; free physical = 2848 ; free virtual = 20156
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2542.160 ; gain = 0.000 ; free physical = 1979 ; free virtual = 19713
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2529.133 ; gain = 0.000 ; free physical = 2896 ; free virtual = 20203
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -219,9 +219,9 @@ Synth Design complete, checksum: 38020b7f
 INFO: [Common 17-83] Releasing license: Synthesis
 23 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 2542.160 ; gain = 64.031 ; free physical = 2267 ; free virtual = 20000
-INFO: [Common 17-1381] The checkpoint '/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/zynq_interrupt_system_processing_system7_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_processing_system7_0_0, cache-ID = 743da480b2216a31
-INFO: [Common 17-1381] The checkpoint '/home/user/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/zynq_interrupt_system_processing_system7_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 2529.133 ; gain = 64.031 ; free physical = 3182 ; free virtual = 20490
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/zynq_interrupt_system_processing_system7_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zynq_interrupt_system_processing_system7_0_0, cache-ID = 53be278d1db45365
+INFO: [Common 17-1381] The checkpoint '/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/zynq_interrupt_system_processing_system7_0_0_synth_1/zynq_interrupt_system_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zynq_interrupt_system_processing_system7_0_0_utilization_synth.rpt -pb zynq_interrupt_system_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 27 20:56:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  3 20:55:10 2021...
