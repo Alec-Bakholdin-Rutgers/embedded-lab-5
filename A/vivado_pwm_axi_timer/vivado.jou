@@ -11,3 +11,18 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupt_system_wrapper.xsa
+close_design
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
