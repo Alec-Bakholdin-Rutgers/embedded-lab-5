@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/synth_1'
+HD_PWD='C:/lab4/A/vivado_pwm_axi_timer/zynq_interrupts.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
