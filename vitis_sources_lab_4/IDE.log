@@ -1159,3 +1159,7 @@ Reason: No Platforms Found.
 
 11:54:19 INFO  : Platform repository initialization has completed.
 11:54:19 INFO  : Registering command handlers for Vitis TCF services
+11:57:18 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+11:57:18 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+11:57:19 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
