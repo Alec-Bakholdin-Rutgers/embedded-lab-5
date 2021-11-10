@@ -66,13 +66,14 @@
 #define INTC_HANDLER            XScuGic_InterruptHandler
 #endif /* XPAR_INTC_0_DEVICE_ID */
 
+#define PWM_PERIOD              5000         /* PWM period in (5 us) */
+#define PULSE_PERIOD			500000000	 /* Pulse period (500 ms) */
 #define TMRCTR_0                0            /* Timer 0 ID */
 #define TMRCTR_1                1            /* Timer 1 ID */
-
-#define PULSE_PERIOD			500000000    // 500 ms
-#define PWM_PERIOD				5000		 // 5 us
-#define STEPS_PER_PERIOD        PULSE_PERIOD/PWM_PERIOD
-
+#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
+#define MAX_DUTYCYCLE           100          /* Max duty cycle */
+#define DUTYCYCLE_DIVISOR       4            /* Duty cycle Divisor */
+#define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
 
 /**************************** Type Definitions *******************************/
 
@@ -126,30 +127,46 @@ int main(void)
 }
 
 int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
-	u32 Period;
-	u32 HighTime;
-	u32 Divisor;
-	u32 StepIndex;
+	/* Configure PWM */
+	do {
+		/* Fail check for 0 divisor */
+		if (!Div) {
+			Status = XST_FAILURE;
+			goto err;
+		}
 
-	while(1) {
-
-		Period = PWM_PERIOD;
-		HighTime = StepIndex * PWM_PERIOD / STEPS_PER_PERIOD;
-
+		/* Disable PWM for reconfiguration */
 		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
-		XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period, HighTime);
+
+		/* Configure PWM */
+		Period = PWM_PERIOD;
+		HighTime = PWM_PERIOD / Div--;
+		DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
+								HighTime);
+		if (Status != XST_SUCCESS) {
+			Status = XST_FAILURE;
+			goto err;
+		}
+
+		/* Enable PWM */
 		XTmrCtr_PwmEnable(TmrCtrInstancePtr);
 
-		StepIndex = (StepIndex++) % STEPS_PER_PERIOD;
-
-		while(1) {
-			if(PeriodTimerHit == TRUE && HighTimerHit == TRUE) {
+		NoOfCycles = 0;
+		WaitCount = WAIT_COUNT;
+		while (NoOfCycles < CYCLE_PER_DUTYCYCLE) {
+			if (PeriodTimerHit == TRUE && HighTimerHit == TRUE) {
 				PeriodTimerHit = FALSE;
 				HighTimerHit = FALSE;
-				break;
+				WaitCount = WAIT_COUNT;
+				NoOfCycles++;
+			}
+
+			/* Interrupt did not occur as expected */
+			if (!(--WaitCount)) {
+				return XST_FAILURE;
 			}
 		}
-	}
+	} while (DutyCycle < MAX_DUTYCYCLE);
 
 	return XST_SUCCESS;
 }
@@ -221,7 +238,13 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION);
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION);
 
-
+	/*
+	 * We start with the fixed divisor and after every CYCLE_PER_DUTYCYCLE
+	 * decrement the divisor by 1, as a result Duty cycle increases
+	 * proportionally. This is done until duty cycle is reached upto
+	 * MAX_DUTYCYCLE
+	 */
+	Div = DUTYCYCLE_DIVISOR;
 
 
 

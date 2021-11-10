@@ -1220,3 +1220,19 @@ Reason: xsct server communication channel is not established.
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "C:\College\2021" line 1)
 
+13:08:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+13:08:54 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+13:08:54 INFO  : Platform repository initialization has completed.
+13:08:55 INFO  : XSCT server has started successfully.
+13:08:55 INFO  : Registering command handlers for Vitis TCF services
+13:08:59 INFO  : Successfully done setting XSCT server connection channel  
+13:08:59 INFO  : plnx-install-location is set to ''
+13:08:59 INFO  : Successfully done query RDI_DATADIR 
+13:08:59 INFO  : Successfully done setting workspace for the tool. 
+13:11:43 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer_2'...
+13:11:43 ERROR : Failed to get platform details for the project 'pwm_axi_timer_2'. Cannot sync application flags.
+13:21:37 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer_2'...
+13:21:37 ERROR : Failed to get platform details for the project 'pwm_axi_timer_2'. Cannot sync application flags.

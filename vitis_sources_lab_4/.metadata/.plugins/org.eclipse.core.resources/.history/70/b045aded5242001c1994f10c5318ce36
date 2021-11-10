@@ -134,7 +134,7 @@ int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
 	while(1) {
 
 		Period = PWM_PERIOD;
-		HighTime = StepIndex * PWM_PERIOD / STEPS_PER_PERIOD;
+		HighTime = (StepIndex/STEPS_PER_PERIOD) * PWM_PERIOD;
 
 		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
 		XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period, HighTime);
@@ -150,6 +150,49 @@ int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
 			}
 		}
 	}
+
+	Div = DUTYCYCLE_DIVISOR;
+
+	/* Configure PWM */
+	do {
+		/* Fail check for 0 divisor */
+		if (!Div) {
+			Status = XST_FAILURE;
+			goto err;
+		}
+
+		/* Disable PWM for reconfiguration */
+		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
+
+		/* Configure PWM */
+		Period = PWM_PERIOD;
+		HighTime = PWM_PERIOD / Div--;
+		DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
+								HighTime);
+		if (Status != XST_SUCCESS) {
+			Status = XST_FAILURE;
+			goto err;
+		}
+
+		/* Enable PWM */
+		XTmrCtr_PwmEnable(TmrCtrInstancePtr);
+
+		NoOfCycles = 0;
+		WaitCount = WAIT_COUNT;
+		while (NoOfCycles < CYCLE_PER_DUTYCYCLE) {
+			if (PeriodTimerHit == TRUE && HighTimerHit == TRUE) {
+				PeriodTimerHit = FALSE;
+				HighTimerHit = FALSE;
+				WaitCount = WAIT_COUNT;
+				NoOfCycles++;
+			}
+
+			/* Interrupt did not occur as expected */
+			if (!(--WaitCount)) {
+				return XST_FAILURE;
+			}
+		}
+	} while (DutyCycle < MAX_DUTYCYCLE);
 
 	return XST_SUCCESS;
 }

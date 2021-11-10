@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="pwm_axi_timer_2" location="/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer_2" platform="/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/export/zynq_interrupt_system_wrapper_1/zynq_interrupt_system_wrapper_1.xpfm" platformUID="xilinx:zybo::0.0(custom)" systemProject="pwm_axi_timer_2_system" sysConfig="zynq_interrupt_system_wrapper_1" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="e72ad969d805ec3661abd97af1f48a6b">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1506571286">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.323183970" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

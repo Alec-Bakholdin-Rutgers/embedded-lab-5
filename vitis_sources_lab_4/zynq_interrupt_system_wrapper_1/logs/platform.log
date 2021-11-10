@@ -2488,3 +2488,173 @@ TRACE::2021-11-10.13:00:09::SCWMssOS::DEBUG:  swdes dump  /home/user/lab4/vitis_
 /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
 
 TRACE::2021-11-10.13:00:09::SCWMssOS::Sw design exists and opened at  /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:40::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:40::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:40::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:40::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:40::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:40::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened new HwDB with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWReader::Active system found as  zynq_interrupt_system_wrapper_1
+TRACE::2021-11-10.13:11:43::SCWReader::Handling sysconfig zynq_interrupt_system_wrapper_1
+TRACE::2021-11-10.13:11:43::SCWDomain::checking for install qemu data   : 
+TRACE::2021-11-10.13:11:43::SCWDomain:: Using the QEMU Data from install at  : F:/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-11-10.13:11:43::SCWDomain:: Using the QEMU args  from install at  : F:/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-10.13:11:43::SCWMssOS::No sw design opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::mss exists loading the mss file  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Opened the sw design from mss  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Adding the swdes entry C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-11-10.13:11:43::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-10.13:11:43::SCWMssOS::Opened the sw design.  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-11-10.13:11:43::SCWMssOS::Sw design exists and opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS:: library already available in sw design:  xilffs:4.5
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-11-10.13:11:43::SCWMssOS::Sw design exists and opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-11-10.13:11:43::SCWMssOS::Saving the mss changes C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-10.13:11:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-10.13:11:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-10.13:11:43::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-11-10.13:11:43::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-11-10.13:11:43::SCWMssOS::Sw design exists and opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWReader::No isolation master present  
+TRACE::2021-11-10.13:11:43::SCWDomain::checking for install qemu data   : 
+TRACE::2021-11-10.13:11:43::SCWDomain:: Using the QEMU Data from install at  : F:/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-11-10.13:11:43::SCWDomain:: Using the QEMU args  from install at  : F:/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-11-10.13:11:43::SCWMssOS::No sw design opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::mss exists loading the mss file  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Opened the sw design from mss  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Adding the swdes entry C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2021-11-10.13:11:43::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-10.13:11:43::SCWMssOS::Opened the sw design.  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Saving the mss changes C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-10.13:11:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-10.13:11:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-10.13:11:43::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-11-10.13:11:43::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to open the hw design at C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA given C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA absoulate path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform::DSA directory C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Platform Path C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.13:11:43::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.13:11:43::SCWPlatform::Trying to set the existing hwdb with name zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Opened existing hwdb zynq_interrupt_system_wrapper
+TRACE::2021-11-10.13:11:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-10.13:11:43::SCWMssOS::Checking the sw design at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWMssOS::DEBUG:  swdes dump  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-11-10.13:11:43::SCWMssOS::Sw design exists and opened at  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.13:11:43::SCWReader::No isolation master present  
+LOG::2021-11-10.13:11:43::SCWPlatform::Started generating the artifacts platform zynq_interrupt_system_wrapper_1
+ERROR::2021-11-10.13:11:43::SCWMssOS::Error: Qemu arguments File given  /home/software/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt do not exist
+LOG::2021-11-10.13:21:37::SCWPlatform::Started generating the artifacts platform zynq_interrupt_system_wrapper_1
+ERROR::2021-11-10.13:21:37::SCWMssOS::Error: Qemu arguments File given  /home/software/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt do not exist
