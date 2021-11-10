@@ -148,6 +148,7 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 			/* Fail check for 0 divisor */
 			if (Div <= 0) {
 				Div = DUTYCYCLE_DIVISOR;
+				goto err;
 			}
 
 			/* Disable PWM for reconfiguration */
