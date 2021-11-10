@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov 10 17:07:53 2021
+# Process ID: 12768
+# Current directory: C:/lab4/vivado_pwm_axi_timer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27260 C:\lab4\vivado_pwm_axi_timer\zynq_interrupts.xpr
+# Log file: C:/lab4/vivado_pwm_axi_timer/vivado.log
+# Journal file: C:/lab4/vivado_pwm_axi_timer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/lab4/vivado_pwm_axi_timer/zynq_interrupts.xpr
+INFO: [Project 1-313] Project file moved from 'C:/lab4/A/vivado_pwm_axi_timer' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/.Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/lab4/.Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1282.082 ; gain = 0.000
