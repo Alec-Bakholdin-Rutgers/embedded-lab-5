@@ -142,7 +142,6 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 		 * MAX_DUTYCYCLE
 		 */
 		Div = DUTYCYCLE_DIVISOR;
-
 		/* Configure PWM */
 		while(1){
 			/* Fail check for 0 divisor */
@@ -156,7 +155,7 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 			/* Configure PWM */
 			Period = PWM_PERIOD;
-			HighTime = (float)((float)Div--/(float)DUTYCYCLE_DIVISOR)*PWM_PERIOD;
+			HighTime = PWM_PERIOD / Div--;
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
 			if (Status != XST_SUCCESS) {

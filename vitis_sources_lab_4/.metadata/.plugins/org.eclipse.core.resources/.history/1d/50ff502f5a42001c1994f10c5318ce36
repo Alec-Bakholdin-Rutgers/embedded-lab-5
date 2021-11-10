@@ -156,7 +156,7 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 			/* Configure PWM */
 			Period = PWM_PERIOD;
-			HighTime = (float)((float)Div--/(float)DUTYCYCLE_DIVISOR)*PWM_PERIOD;
+			HighTime = (Div--/DUTYCYCLE_DIVISOR)*PWM_PERIOD;
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
 			if (Status != XST_SUCCESS) {
