@@ -1212,3 +1212,11 @@ Reason: xsct server communication channel is not established.
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "C:\College\2021" line 1)
 
+12:36:05 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:36:05 ERROR : xsct server communication channel is not established.
+12:36:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+12:36:07 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\College\2021" line 1)
+
