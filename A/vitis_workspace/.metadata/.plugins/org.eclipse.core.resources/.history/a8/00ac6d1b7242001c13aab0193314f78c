@@ -87,7 +87,7 @@ int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr) {
 			Period = PWM_PERIOD;
 			HighTimeFactor = (float)Step/(float)STEPS_PER_PULSE;
 			HighTime = HighTimeFactor*(float)PWM_PERIOD;
-			XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
+			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
 
 			Step++;
