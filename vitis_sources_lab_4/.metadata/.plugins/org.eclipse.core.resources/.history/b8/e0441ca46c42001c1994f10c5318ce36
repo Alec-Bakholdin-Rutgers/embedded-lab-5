@@ -73,13 +73,13 @@ int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr) {
 		float HighTimeFactor;
 		int Status = XST_SUCCESS;
 
-		Step = 1;
+		Step = 0;
 
 		/* Configure PWM */
 		while(1){
 
 			if (Step >= STEPS_PER_PULSE) {
-				Step = 1;
+				Step = 0;
 			}
 
 			/* Disable PWM for reconfiguration */
@@ -87,7 +87,7 @@ int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr) {
 
 			/* Configure PWM */
 			Period = PWM_PERIOD;
-			HighTimeFactor = (float)Step/(float)STEPS_PER_PULSE;
+			HighTimeFactor = ((float)Step)/((float)STEPS_PER_PULSE);
 			HighTime = HighTimeFactor*(float)PWM_PERIOD;
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
