@@ -126,7 +126,6 @@ int main(void)
 }
 
 int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
-
 		u8  DutyCycle;
 		u8  NoOfCycles;
 		u8  Div;
@@ -134,7 +133,6 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 		u32 HighTime;
 		u64 WaitCount;
 		int Status;
-
 		/* Configure PWM */
 		do {
 			/* Fail check for 0 divisor */

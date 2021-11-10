@@ -126,7 +126,6 @@ int main(void)
 }
 
 int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
-
 		u8  DutyCycle;
 		u8  NoOfCycles;
 		u8  Div;

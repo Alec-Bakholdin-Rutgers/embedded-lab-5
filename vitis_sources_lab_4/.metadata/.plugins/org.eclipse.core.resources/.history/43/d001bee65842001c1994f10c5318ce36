@@ -126,16 +126,7 @@ int main(void)
 }
 
 int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
-
-		u8  DutyCycle;
-		u8  NoOfCycles;
-		u8  Div;
-		u32 Period;
-		u32 HighTime;
-		u64 WaitCount;
-		int Status;
-
-		/* Configure PWM */
+	/* Configure PWM */
 		do {
 			/* Fail check for 0 divisor */
 			if (!Div) {
@@ -209,6 +200,12 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 						u16 DeviceId, u16 IntrId)
 {
+	u8  DutyCycle;
+	u8  NoOfCycles;
+	u8  Div;
+	u32 Period;
+	u32 HighTime;
+	u64 WaitCount;
 	int Status;
 
 	/*
