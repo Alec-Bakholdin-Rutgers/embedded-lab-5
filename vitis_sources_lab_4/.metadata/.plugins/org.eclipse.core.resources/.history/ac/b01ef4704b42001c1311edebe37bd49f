@@ -1,3 +1,41 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@Alec-Bakholdin-Rutgers
+Xilinx /
+embeddedsw
+Public
+
+105
+494
+
+    778
+
+Code
+Issues 85
+Pull requests 54
+Actions
+Projects
+Security
+
+    Insights
+
+embeddedsw/XilinxProcessorIPLib/drivers/tmrctr/src/xtmrctr.h
+Siva Durga Prasad Paladugu tmrctr: Fix compilation errors with -Werror=conversion
+Latest commit cecf4a4 on Feb 17
+History
+7 contributors
+@saddepal
+@mubinsyed
+@andrei-simion
+@NavaKishoreManne
+@kothakondashireesha
+@saikrishnapotthuri
+@kedareswararao
+309 lines (280 sloc) 13.2 KB
 /******************************************************************************
 * Copyright (C) 2002 - 2021 Xilinx, Inc.  All rights reserved.
 * SPDX-License-Identifier: MIT
@@ -39,7 +77,6 @@
 * external events. This mode uses an external capture input signal to cause
 * the value of the timer counter to be captured. When started, the timer
 * counter loads an initial value, referred to as the compare value,
-
 * The timer can be configured to either cause an interrupt when the count
 * reaches the compare value in compare mode or latch the current count
 * value in the capture register when an external input is asserted
@@ -307,3 +344,18 @@ void XTmrCtr_InterruptHandler(void *InstancePtr);
 
 #endif /* end of protection macro */
 /** @} */
+
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
