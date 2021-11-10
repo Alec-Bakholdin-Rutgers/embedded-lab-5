@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov 10 17:28:12 2021
+# Process ID: 11108
+# Current directory: C:/lab4/vivado_pwm_axi_timer/zynq_interrupts.runs/synth_1
+# Command line: vivado.exe -log zynq_interrupt_system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_interrupt_system_wrapper.tcl
+# Log file: C:/lab4/vivado_pwm_axi_timer/zynq_interrupts.runs/synth_1/zynq_interrupt_system_wrapper.vds
+# Journal file: C:/lab4/vivado_pwm_axi_timer/zynq_interrupts.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zynq_interrupt_system_wrapper.tcl -notrace

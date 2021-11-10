@@ -21,9 +21,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interr
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_rst_ps7_0_100M_0 || ORIG_REF_NAME==zynq_interrupt_system_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_0/zynq_interrupt_system_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_axi_gpio_0_0 || ORIG_REF_NAME==zynq_interrupt_system_axi_gpio_0_0} -quiet] -quiet
-
 # IP: bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_interrupt_system_auto_pc_0 || ORIG_REF_NAME==zynq_interrupt_system_auto_pc_0} -quiet] -quiet
 

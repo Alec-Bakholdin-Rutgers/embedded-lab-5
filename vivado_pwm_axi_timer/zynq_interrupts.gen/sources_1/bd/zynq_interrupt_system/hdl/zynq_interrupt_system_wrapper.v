@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-//Date        : Wed Nov 10 17:12:05 2021
+//Date        : Wed Nov 10 17:28:05 2021
 //Host        : ALEC-PC running 64-bit major release  (build 9200)
 //Command     : generate_target zynq_interrupt_system_wrapper.bd
 //Design      : zynq_interrupt_system_wrapper
@@ -31,7 +31,6 @@ module zynq_interrupt_system_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    btns_4bits_tri_i,
     pwm0_0);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -54,7 +53,6 @@ module zynq_interrupt_system_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  input [3:0]btns_4bits_tri_i;
   output pwm0_0;
 
   wire [14:0]DDR_addr;
@@ -78,7 +76,6 @@ module zynq_interrupt_system_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [3:0]btns_4bits_tri_i;
   wire pwm0_0;
 
   zynq_interrupt_system zynq_interrupt_system_i
@@ -103,6 +100,5 @@ module zynq_interrupt_system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .btns_4bits_tri_i(btns_4bits_tri_i),
         .pwm0_0(pwm0_0));
 endmodule

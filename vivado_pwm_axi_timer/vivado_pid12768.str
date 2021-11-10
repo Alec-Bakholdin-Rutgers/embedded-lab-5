@@ -397,3 +397,4 @@ dismissDialog("Launch Runs"); // cD
 // TclEventType: RUN_STATUS_CHANGE
 // Elapsed time: 20 seconds
 dismissDialog("Generate Bitstream"); // bz
+// TclEventType: FILE_SET_CHANGE

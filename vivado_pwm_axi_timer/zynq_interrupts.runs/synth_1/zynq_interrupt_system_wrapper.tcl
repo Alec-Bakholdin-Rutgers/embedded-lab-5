@@ -70,6 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache C:/lab4/vivado_pwm_axi_timer/.Xil/Vivado-12768-ALEC-PC/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -97,9 +102,6 @@ set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi
 set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_rst_ps7_0_100M_0/zynq_interrupt_system_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_0/zynq_interrupt_system_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_0/zynq_interrupt_system_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_axi_gpio_0_0/zynq_interrupt_system_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/ip/zynq_interrupt_system_auto_pc_0/zynq_interrupt_system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/lab4/vivado_pwm_axi_timer/zynq_interrupts.gen/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system_ooc.xdc]
 
