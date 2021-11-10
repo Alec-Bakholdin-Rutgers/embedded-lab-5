@@ -9815,3 +9815,16 @@ TRACE::2021-11-10.12:21:40::SCWMssOS::rd -nostartfiles -g -Wall -Wextra -fno-tre
 
 ERROR::2021-11-10.12:21:40::SCWMssOS::Failed to build  the bsp sources for domain - standalone_ps7_cortexa9_0
 ERROR::2021-11-10.12:21:40::SCWSystem::Error in Processing the domain standalone_ps7_cortexa9_0
+TRACE::2021-11-10.12:47:33::SCWPlatform::Clearing the existing platform
+TRACE::2021-11-10.12:47:33::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-11-10.12:47:33::SCWBDomain::clearing the fsbl build
+TRACE::2021-11-10.12:47:33::SCWMssOS::Removing the swdes entry for  /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-11-10.12:47:33::SCWMssOS::Removing the swdes entry for  /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-11-10.12:47:33::SCWSystem::Clearing the domains completed.
+TRACE::2021-11-10.12:47:33::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-11-10.12:47:33::SCWPlatform::DSA given /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.12:47:33::SCWPlatform::DSA absoulate path /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.12:47:33::SCWPlatform:: Platform location is /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/hw
+TRACE::2021-11-10.12:47:33::SCWPlatform:: Platform Path /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa
+TRACE::2021-11-10.12:47:33::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-11-10.12:47:33::SCWPlatform::Removing the HwDB with name /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa

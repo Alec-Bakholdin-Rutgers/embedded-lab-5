@@ -3,7 +3,6 @@
 	<name>pwm_axi_timer</name>
 	<comment>Created by Vitis v2021.1</comment>
 	<projects>
-		<project>zynq_interrupt_system_wrapper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

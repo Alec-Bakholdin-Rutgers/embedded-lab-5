@@ -31,3 +31,4 @@ platform generate
 platform generate -domains standalone_ps7_cortexa9_0 
 platform generate -domains standalone_ps7_cortexa9_0 
 platform config -updatehw {/home/user/lab4/vivado_zynq_interrupts/zynq_interrupt_system_wrapper.xsa}
+platform write
