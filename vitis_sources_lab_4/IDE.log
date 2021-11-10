@@ -1163,3 +1163,16 @@ Reason: No Platforms Found.
 11:57:18 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
 11:57:19 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
 
+12:00:19 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:00:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+12:00:19 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+12:00:19 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+12:00:21 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+12:03:21 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:03:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+12:03:21 ERROR : xsct server communication channel is not established.
+12:03:22 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+

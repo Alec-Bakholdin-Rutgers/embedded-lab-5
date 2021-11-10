@@ -180,11 +180,8 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 
 
 	XTmrCtr_PwmConfigure(TmrCtrInstancePtr, PWM_PERIOD, PWM_PERIOD/2);
-
-	u32 TmrCtrOptions0 = XTmrCtr_GetOptions(TmrCtrInstancePtr, TMRCTR_0);
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, TmrCtrOptions0 | XTC_INT_MODE_OPTION | XTC_EXT_COMPARE_OPTION);
-	u32 TmrCtrOptions1 = XTmrCtr_GetOptions(TmrCtrInstancePtr, TMRCTR_1);
-		XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, TmrCtrOptions1 | XTC_INT_MODE_OPTION | XTC_EXT_COMPARE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_EXT_COMPARE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_EXT_COMPARE_OPTION);
 	XTmrCtr_PwmEnable(TmrCtrInstancePtr);
 
 	//XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
