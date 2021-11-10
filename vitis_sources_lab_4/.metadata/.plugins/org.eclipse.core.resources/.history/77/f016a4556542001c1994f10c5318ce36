@@ -155,7 +155,6 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
 			xil_printf("Duty Cycle: %d, Div: %d\n", DutyCycle, Div);
-			Div++;
 			if (Status != XST_SUCCESS) {
 				Status = XST_FAILURE;
 				goto err;

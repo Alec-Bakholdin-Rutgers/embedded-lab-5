@@ -71,7 +71,7 @@
 #define TMRCTR_1                1            /* Timer 1 ID */
 #define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
 #define MAX_DUTYCYCLE           100          /* Max duty cycle */
-#define STEPS_PER_PULSE       100            /* Duty cycle Divisor */
+#define DUTYCYCLE_DIVISOR       100            /* Duty cycle Divisor */
 #define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
 
 /**************************** Type Definitions *******************************/
@@ -133,15 +133,20 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 		u32 Period;
 		u32 HighTime;
 		u64 WaitCount;
-		float HighTimeFactor;
 		int Status = XST_SUCCESS;
 
+		/*
+		 * We start with the fixed divisor and after every CYCLE_PER_DUTYCYCLE
+		 * decrement the divisor by 1, as a result Duty cycle increases
+		 * proportionally. This is done until duty cycle is reached upto
+		 * MAX_DUTYCYCLE
+		 */
 		Div = 0;
 
 		/* Configure PWM */
 		while(1){
-
-			if (Div >= STEPS_PER_PULSE) {
+			/* Fail check for 0 divisor */
+			if (Div >= DUTYCYCLE_DIVISOR) {
 				Div = 0;
 			}
 
@@ -150,12 +155,9 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 			/* Configure PWM */
 			Period = PWM_PERIOD;
-			HighTimeFactor = (float)Div/(float)STEPS_PER_PULSE;
-			HighTime = HighTimeFactor*(float)PWM_PERIOD;
+			HighTime = (float)((float)Div++/(float)DUTYCYCLE_DIVISOR)*PWM_PERIOD;
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
-			xil_printf("Duty Cycle: %d, Div: %d\n", DutyCycle, Div);
-			Div++;
 			if (Status != XST_SUCCESS) {
 				Status = XST_FAILURE;
 				goto err;
