@@ -187,6 +187,11 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 		Status = XST_SUCCESS;
 	err:
+		/* Disable PWM */
+		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
+
+		/* Disable interrupts */
+		TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
 
 		return Status;
 }
@@ -253,15 +258,7 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION);
 
 
-	Status = TmrCtrLogic(TmrCtrInstancePtr);
-
-	/* Disable PWM */
-	XTmrCtr_PwmDisable(TmrCtrInstancePtr);
-
-	/* Disable interrupts */
-	TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
-
-	return Status;
+	return TmrCtrLogic(TmrCtrInstancePtr);
 }
 
 /*****************************************************************************/

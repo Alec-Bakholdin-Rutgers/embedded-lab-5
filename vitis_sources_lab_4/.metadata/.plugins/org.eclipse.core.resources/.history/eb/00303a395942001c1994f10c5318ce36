@@ -125,7 +125,7 @@ int main(void)
 	return XST_SUCCESS;
 }
 
-int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
+int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId) {
 
 		u8  DutyCycle;
 		u8  NoOfCycles;

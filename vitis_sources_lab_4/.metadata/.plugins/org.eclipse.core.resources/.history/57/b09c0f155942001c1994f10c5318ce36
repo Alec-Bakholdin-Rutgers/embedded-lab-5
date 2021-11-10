@@ -135,13 +135,6 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 		u64 WaitCount;
 		int Status;
 
-		/*
-		 * We start with the fixed divisor and after every CYCLE_PER_DUTYCYCLE
-		 * decrement the divisor by 1, as a result Duty cycle increases
-		 * proportionally. This is done until duty cycle is reached upto
-		 * MAX_DUTYCYCLE
-		 */
-		Div = DUTYCYCLE_DIVISOR;
 		/* Configure PWM */
 		do {
 			/* Fail check for 0 divisor */
@@ -187,6 +180,11 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 		Status = XST_SUCCESS;
 	err:
+		/* Disable PWM */
+		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
+
+		/* Disable interrupts */
+		TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
 
 		return Status;
 }
@@ -252,16 +250,15 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION);
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION);
 
+	/*
+	 * We start with the fixed divisor and after every CYCLE_PER_DUTYCYCLE
+	 * decrement the divisor by 1, as a result Duty cycle increases
+	 * proportionally. This is done until duty cycle is reached upto
+	 * MAX_DUTYCYCLE
+	 */
+	Div = DUTYCYCLE_DIVISOR;
 
-	Status = TmrCtrLogic(TmrCtrInstancePtr);
-
-	/* Disable PWM */
-	XTmrCtr_PwmDisable(TmrCtrInstancePtr);
-
-	/* Disable interrupts */
-	TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
-
-	return Status;
+	return TmrCtrLogic(TmrCtrInstancePtr);
 }
 
 /*****************************************************************************/
