@@ -1,0 +1,12 @@
+09:59:30 ERROR : Workspace location C:\College\2021 Fall\Embedded Systems 2\Lab 4 contains spaces. Please switch to a workspace without spaces in its path.
+09:59:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\Lab 4\temp_xsdb_launch_script.tcl
+09:59:31 INFO  : Platform repository initialization has completed.
+09:59:32 INFO  : Registering command handlers for Vitis TCF services
+09:59:34 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:03:01 ERROR : Workspace location C:\College\2021 Fall\Embedded Systems 2\lab4 contains spaces. Please switch to a workspace without spaces in its path.
+10:03:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\temp_xsdb_launch_script.tcl
+10:03:02 INFO  : Platform repository initialization has completed.
+10:03:02 INFO  : Registering command handlers for Vitis TCF services
+10:03:03 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+

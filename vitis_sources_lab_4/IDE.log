@@ -1002,3 +1002,23 @@ dow /home/user/lab-5/vitis_sources_lab_4/pwm_axi_timer/Debug/pwm_axi_timer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
+10:03:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+10:03:24 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:03:25 ERROR : Workspace location C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4 contains spaces. Please switch to a workspace without spaces in its path.
+10:03:26 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+10:03:26 INFO  : Platform repository initialization has completed.
+10:03:26 INFO  : Registering command handlers for Vitis TCF services
+10:05:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+10:05:24 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:05:24 ERROR : Workspace location C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4 contains spaces. Please switch to a workspace without spaces in its path.
+10:05:26 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+10:05:26 INFO  : Platform repository initialization has completed.
+10:05:26 INFO  : Registering command handlers for Vitis TCF services
