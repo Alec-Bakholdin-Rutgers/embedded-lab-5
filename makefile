@@ -4,5 +4,6 @@ send:
 	git push
 
 recv:
-	git reset --hard
-	git pull
+	git fetch --all
+	git branch backup-main
+	git reset --hard origin/main
