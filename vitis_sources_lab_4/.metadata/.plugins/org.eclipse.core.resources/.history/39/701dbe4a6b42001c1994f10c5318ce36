@@ -38,8 +38,6 @@ static void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
 INTC InterruptController;
 XTmrCtr TimerCounterInst;
 
-static int   PeriodTimerHit = FALSE;
-static int   HighTimerHit = FALSE;
 
 int main(void) {
 	int Status;
