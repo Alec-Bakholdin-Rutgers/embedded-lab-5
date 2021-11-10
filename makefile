@@ -4,5 +4,5 @@ send:
 	git push
 
 recv:
-	git stash
+	git reset --hard
 	git pull
