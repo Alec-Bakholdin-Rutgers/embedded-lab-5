@@ -36,7 +36,6 @@
 
 #include "xscugic.h"
 #include "xil_printf.h"
-#endif
 
 /************************** Constant Definitions *****************************/
 /*
@@ -46,14 +45,11 @@
  */
 #define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
 
-#else
 #define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
-#endif
 
 #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define INTC                    XScuGic
 #define INTC_HANDLER            XScuGic_InterruptHandler
-#endif /* XPAR_INTC_0_DEVICE_ID */
 
 #define PWM_PERIOD              500000000    /* PWM period in (500 ms) */
 #define TMRCTR_0                0            /* Timer 0 ID */
@@ -179,12 +175,12 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 							TmrCtrInstancePtr);
 
 	/* Enable the interrupt of the timer counter */
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION);
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
 
 	XTmrCtr_PwmEnable(TmrCtrInstancePtr);
-	XTrmCtr_SetResetValue(TimrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
-	XTrmCtr_SetResetValue(TimrCtrInstancePtr, TMRCTR_1, PWM_PERIOD);
+	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
+	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_1, PWM_PERIOD);
 	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_0);
 	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_1);
 
@@ -213,7 +209,7 @@ static void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 	xil_printf("TmrCtrNumber: %d\n", TmrCtrNumber);
 	/* Mark if period timer expired */
 	if (TmrCtrNumber == TMRCTR_0) {
-		LowTimerHit = TRUE;
+		//LowTimerHit = TRUE;
 	}
 
 	/* Mark if high time timer expired */

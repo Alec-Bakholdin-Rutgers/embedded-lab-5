@@ -1046,3 +1046,106 @@ Reason: xsct server communication channel is not established.
 Reason: xsct server communication channel is not established. 
 10:24:19 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
 10:24:19 ERROR : Failed to get platform details for the project 'pwm_axi_timer'. Cannot sync application flags.
+10:28:46 INFO  : Launching XSCT server: xsct -n  -interactive /home/user/lab4/vitis_sources_lab_4/temp_xsdb_launch_script.tcl
+10:28:49 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+10:28:49 INFO  : Platform repository initialization has completed.
+10:28:49 INFO  : Registering command handlers for Vitis TCF services
+10:28:50 INFO  : XSCT server has started successfully.
+10:28:50 INFO  : Successfully done setting XSCT server connection channel  
+10:28:50 INFO  : plnx-install-location is set to ''
+10:28:50 INFO  : Successfully done setting workspace for the tool. 
+10:28:50 INFO  : Successfully done query RDI_DATADIR 
+10:32:00 INFO  : Result from executing command 'getProjects': zynq_interrupt_system_wrapper
+10:32:00 INFO  : Result from executing command 'getPlatforms': 
+10:32:03 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:32:40 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:33:50 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:34:19 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:34:33 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:34:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:34:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A42CAAA" && level==0 && jtag_device_ctx=="jsn-Zybo-210279A42CAAA-13722093-0"}' command is executed.
+10:34:45 INFO  : Device configured successfully with "/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/bitstream/zynq_interrupt_system_wrapper.bit"
+10:35:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:04 INFO  : Jtag cable 'Digilent Zybo 210279A42CAAA' is selected.
+10:35:04 INFO  : 'jtag frequency' command is executed.
+10:35:04 INFO  : Context for 'APU' is selected.
+10:35:04 INFO  : System reset is completed.
+10:35:07 INFO  : 'after 3000' command is executed.
+10:35:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A42CAAA" && level==0 && jtag_device_ctx=="jsn-Zybo-210279A42CAAA-13722093-0"}' command is executed.
+10:35:08 INFO  : Device configured successfully with "/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/bitstream/zynq_interrupt_system_wrapper.bit"
+10:35:08 INFO  : Context for 'APU' is selected.
+10:35:08 INFO  : Hardware design and registers information is loaded from '/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa'.
+10:35:08 INFO  : 'configparams force-mem-access 1' command is executed.
+10:35:08 INFO  : Context for 'APU' is selected.
+10:35:08 INFO  : Sourcing of '/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/psinit/ps7_init.tcl' is done.
+10:35:08 INFO  : 'ps7_init' command is executed.
+10:35:08 INFO  : 'ps7_post_config' command is executed.
+10:35:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:09 INFO  : The application '/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/Debug/pwm_axi_timer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:35:09 INFO  : 'configparams force-mem-access 0' command is executed.
+10:35:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A42CAAA" && level==0 && jtag_device_ctx=="jsn-Zybo-210279A42CAAA-13722093-0"}
+fpga -file /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/bitstream/zynq_interrupt_system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/Debug/pwm_axi_timer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:36:46 INFO  : Disconnected from the channel tcfchan#2.
+11:35:29 INFO  : Result from executing command 'getProjects': zynq_interrupt_system_wrapper
+11:35:29 INFO  : Result from executing command 'getPlatforms': zynq_interrupt_system_wrapper|/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/zynq_interrupt_system_wrapper.xpfm
+11:35:32 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+11:36:50 INFO  : Result from executing command 'getProjects': zynq_interrupt_system_wrapper
+11:36:50 INFO  : Result from executing command 'getPlatforms': zynq_interrupt_system_wrapper|/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/zynq_interrupt_system_wrapper.xpfm
+11:38:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:20 INFO  : Jtag cable 'Digilent Zybo 210279A42CAAA' is selected.
+11:38:20 INFO  : 'jtag frequency' command is executed.
+11:38:20 INFO  : Context for 'APU' is selected.
+11:38:20 INFO  : System reset is completed.
+11:38:23 INFO  : 'after 3000' command is executed.
+11:38:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A42CAAA" && level==0 && jtag_device_ctx=="jsn-Zybo-210279A42CAAA-13722093-0"}' command is executed.
+11:38:24 INFO  : Device configured successfully with "/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/bitstream/zynq_interrupt_system_wrapper.bit"
+11:38:24 INFO  : Context for 'APU' is selected.
+11:38:24 INFO  : Hardware design and registers information is loaded from '/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa'.
+11:38:24 INFO  : 'configparams force-mem-access 1' command is executed.
+11:38:24 INFO  : Context for 'APU' is selected.
+11:38:24 INFO  : Sourcing of '/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/psinit/ps7_init.tcl' is done.
+11:38:25 INFO  : 'ps7_init' command is executed.
+11:38:25 INFO  : 'ps7_post_config' command is executed.
+11:38:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:38:25 INFO  : The application '/home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/Debug/pwm_axi_timer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:38:25 INFO  : 'configparams force-mem-access 0' command is executed.
+11:38:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A42CAAA" && level==0 && jtag_device_ctx=="jsn-Zybo-210279A42CAAA-13722093-0"}
+fpga -file /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/bitstream/zynq_interrupt_system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/hw/zynq_interrupt_system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/user/lab4/vitis_sources_lab_4/pwm_axi_timer/Debug/pwm_axi_timer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:48:56 INFO  : Disconnected from the channel tcfchan#5.

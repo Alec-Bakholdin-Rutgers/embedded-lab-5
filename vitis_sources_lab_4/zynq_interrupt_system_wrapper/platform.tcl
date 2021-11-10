@@ -27,3 +27,6 @@ platform config -updatehw {/home/user/lab-5/vivado_zynq_interrupts/zynq_interrup
 platform generate
 platform config -updatehw {/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupt_system_wrapper.xsa}
 platform generate -domains 
+platform generate
+platform generate -domains standalone_ps7_cortexa9_0 
+platform generate -domains standalone_ps7_cortexa9_0 

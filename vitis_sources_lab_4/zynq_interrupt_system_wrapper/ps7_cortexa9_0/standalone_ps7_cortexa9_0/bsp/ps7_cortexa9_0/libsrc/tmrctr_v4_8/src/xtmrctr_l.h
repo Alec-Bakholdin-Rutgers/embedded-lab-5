@@ -1,44 +1,44 @@
 /******************************************************************************
-* Copyright (C) 2002 - 2021 Xilinx, Inc.  All rights reserved.
-* SPDX-License-Identifier: MIT
-******************************************************************************/
+ * Copyright (C) 2002 - 2021 Xilinx, Inc.  All rights reserved.
+ * SPDX-License-Identifier: MIT
+ ******************************************************************************/
 
 /*****************************************************************************/
 /**
-*
-* @file xtmrctr_l.h
-* @addtogroup tmrctr_v4_8
-* @{
-*
-* This header file contains identifiers and low-level driver functions (or
-* macros) that can be used to access the device.  The user should refer to the
-* hardware device specification for more details of the device operation.
-* High-level driver functions are defined in xtmrctr.h.
-*
-* <pre>
-* MODIFICATION HISTORY:
-*
-* Ver   Who  Date     Changes
-* ----- ---- -------- -----------------------------------------------
-* 1.00b jhl  04/24/02 First release
-* 1.10b mta  03/21/07 Updated to new coding style
-* 2.00a ktn  10/30/09 Updated to use HAL API's. _m is removed from all the macro
-*		      definitions.
-* 2.01a ktn  07/12/10 Renamed the macro XTimerCtr_ReadReg as XTmrCtr_ReadReg
-*		      for naming consistency (CR 559142).
-* 2.04a sdm  07/12/11 Added the CASC mode bit in the TCSRO register for the
-*		      cascade mode operation.
-*		      The cascade mode of operation is present in the latest
-*		      versions of the axi_timer IP. Please check the HW
-*		      Datasheet to see whether this feature is present in the
-*		      version of the IP that you are using.
-* 4.4   mus  07/21/17 Updated XTmrCtr_DisableIntr macro to not to clear
-*             T0INT flag
-* 4.5   cjp  03/22/18 Added macros for timer/counter instance number and max
-*                     load value.
-* </pre>
-*
-******************************************************************************/
+ *
+ * @file xtmrctr_l.h
+ * @addtogroup tmrctr_v4_8
+ * @{
+ *
+ * This header file contains identifiers and low-level driver functions (or
+ * macros) that can be used to access the device.  The user should refer to the
+ * hardware device specification for more details of the device operation.
+ * High-level driver functions are defined in xtmrctr.h.
+ *
+ * <pre>
+ * MODIFICATION HISTORY:
+ *
+ * Ver   Who  Date     Changes
+ * ----- ---- -------- -----------------------------------------------
+ * 1.00b jhl  04/24/02 First release
+ * 1.10b mta  03/21/07 Updated to new coding style
+ * 2.00a ktn  10/30/09 Updated to use HAL API's. _m is removed from all the macro
+ *		      definitions.
+ * 2.01a ktn  07/12/10 Renamed the macro XTimerCtr_ReadReg as XTmrCtr_ReadReg
+ *		      for naming consistency (CR 559142).
+ * 2.04a sdm  07/12/11 Added the CASC mode bit in the TCSRO register for the
+ *		      cascade mode operation.
+ *		      The cascade mode of operation is present in the latest
+ *		      versions of the axi_timer IP. Please check the HW
+ *		      Datasheet to see whether this feature is present in the
+ *		      version of the IP that you are using.
+ * 4.4   mus  07/21/17 Updated XTmrCtr_DisableIntr macro to not to clear
+ *             T0INT flag
+ * 4.5   cjp  03/22/18 Added macros for timer/counter instance number and max
+ *                     load value.
+ * </pre>
+ *
+ ******************************************************************************/
 
 #ifndef XTMRCTR_L_H		/* prevent circular inclusions */
 #define XTMRCTR_L_H		/* by using protection macros */
@@ -155,21 +155,21 @@ extern u8 XTmrCtr_Offsets[];
 
 /*****************************************************************************/
 /**
-* Read one of the timer counter registers.
-*
-* @param	BaseAddress contains the base address of the timer counter
-*		device.
-* @param	TmrCtrNumber contains the specific timer counter within the
-*		device, a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-* @param	RegOffset contains the offset from the 1st register of the timer
-*		counter to select the specific register of the timer counter.
-*
-* @return	The value read from the register, a 32 bit value.
-*
-* @note		C-Style signature:
-* 		u32 XTmrCtr_ReadReg(u32 BaseAddress, u8 TimerNumber,
-					unsigned RegOffset);
-******************************************************************************/
+ * Read one of the timer counter registers.
+ *
+ * @param	BaseAddress contains the base address of the timer counter
+ *		device.
+ * @param	TmrCtrNumber contains the specific timer counter within the
+ *		device, a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ * @param	RegOffset contains the offset from the 1st register of the timer
+ *		counter to select the specific register of the timer counter.
+ *
+ * @return	The value read from the register, a 32 bit value.
+ *
+ * @note		C-Style signature:
+ * 		u32 XTmrCtr_ReadReg(u32 BaseAddress, u8 TimerNumber,
+ unsigned RegOffset);
+ ******************************************************************************/
 #define XTmrCtr_ReadReg(BaseAddress, TmrCtrNumber, RegOffset)	\
 	Xil_In32((BaseAddress) + XTmrCtr_Offsets[(TmrCtrNumber)] + \
 			(RegOffset))
@@ -180,130 +180,130 @@ extern u8 XTmrCtr_Offsets[];
 
 /*****************************************************************************/
 /**
-* Write a specified value to a register of a timer counter.
-*
-* @param	BaseAddress is the base address of the timer counter device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-* @param	RegOffset contain the offset from the 1st register of the timer
-*		counter to select the specific register of the timer counter.
-* @param	ValueToWrite is the 32 bit value to be written to the register.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_WriteReg(u32 BaseAddress, u8 TimerNumber,
-*					unsigned RegOffset, u32 ValueToWrite);
-******************************************************************************/
+ * Write a specified value to a register of a timer counter.
+ *
+ * @param	BaseAddress is the base address of the timer counter device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ * @param	RegOffset contain the offset from the 1st register of the timer
+ *		counter to select the specific register of the timer counter.
+ * @param	ValueToWrite is the 32 bit value to be written to the register.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_WriteReg(u32 BaseAddress, u8 TimerNumber,
+ *					unsigned RegOffset, u32 ValueToWrite);
+ ******************************************************************************/
 #define XTmrCtr_WriteReg(BaseAddress, TmrCtrNumber, RegOffset, ValueToWrite)\
 	Xil_Out32(((BaseAddress) + XTmrCtr_Offsets[(TmrCtrNumber)] +	\
 			   (RegOffset)), (ValueToWrite))
 
 /****************************************************************************/
 /**
-*
-* Set the Control Status Register of a timer counter to the specified value.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-* @param	RegisterValue is the 32 bit value to be written to the register.
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_SetControlStatusReg(u32 BaseAddress,
-*					u8 TmrCtrNumber,u32 RegisterValue);
-*****************************************************************************/
+ *
+ * Set the Control Status Register of a timer counter to the specified value.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ * @param	RegisterValue is the 32 bit value to be written to the register.
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_SetControlStatusReg(u32 BaseAddress,
+ *					u8 TmrCtrNumber,u32 RegisterValue);
+ *****************************************************************************/
 #define XTmrCtr_SetControlStatusReg(BaseAddress, TmrCtrNumber, RegisterValue)\
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,     \
 					   (RegisterValue))
 
 /****************************************************************************/
 /**
-*
-* Get the Control Status Register of a timer counter.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device,
-*		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	The value read from the register, a 32 bit value.
-*
-* @note		C-Style signature:
-* 		u32 XTmrCtr_GetControlStatusReg(u32 BaseAddress,
-*						u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Get the Control Status Register of a timer counter.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device,
+ *		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	The value read from the register, a 32 bit value.
+ *
+ * @note		C-Style signature:
+ * 		u32 XTmrCtr_GetControlStatusReg(u32 BaseAddress,
+ *						u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_GetControlStatusReg(BaseAddress, TmrCtrNumber)		\
 	XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Get the Timer Counter Register of a timer counter.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device,
-*		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	The value read from the register, a 32 bit value.
-*
-* @note		C-Style signature:
-* 		u32 XTmrCtr_GetTimerCounterReg(u32 BaseAddress,
-*						u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Get the Timer Counter Register of a timer counter.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device,
+ *		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	The value read from the register, a 32 bit value.
+ *
+ * @note		C-Style signature:
+ * 		u32 XTmrCtr_GetTimerCounterReg(u32 BaseAddress,
+ *						u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_GetTimerCounterReg(BaseAddress, TmrCtrNumber)		  \
 	XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TCR_OFFSET) \
 
 /****************************************************************************/
 /**
-*
-* Set the Load Register of a timer counter to the specified value.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-* @param	RegisterValue is the 32 bit value to be written to the register.
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_SetLoadReg(u32 BaseAddress, u8 TmrCtrNumber,
-*						  u32 RegisterValue);
-*****************************************************************************/
+ *
+ * Set the Load Register of a timer counter to the specified value.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ * @param	RegisterValue is the 32 bit value to be written to the register.
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_SetLoadReg(u32 BaseAddress, u8 TmrCtrNumber,
+ *						  u32 RegisterValue);
+ *****************************************************************************/
 #define XTmrCtr_SetLoadReg(BaseAddress, TmrCtrNumber, RegisterValue)	 \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET, \
 					   (RegisterValue))
 
 /****************************************************************************/
 /**
-*
-* Get the Load Register of a timer counter.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	The value read from the register, a 32 bit value.
-*
-* @note		C-Style signature:
-* 		u32 XTmrCtr_GetLoadReg(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Get the Load Register of a timer counter.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	The value read from the register, a 32 bit value.
+ *
+ * @note		C-Style signature:
+ * 		u32 XTmrCtr_GetLoadReg(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_GetLoadReg(BaseAddress, TmrCtrNumber)	\
 XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Enable a timer counter such that it starts running.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_Enable(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Enable a timer counter such that it starts running.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_Enable(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_Enable(BaseAddress, TmrCtrNumber)			    \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,   \
 			(XTmrCtr_ReadReg((BaseAddress), ( TmrCtrNumber), \
@@ -311,18 +311,18 @@ XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Disable a timer counter such that it stops running.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device,
-*		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_Disable(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Disable a timer counter such that it stops running.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device,
+ *		a zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_Disable(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_Disable(BaseAddress, TmrCtrNumber)			  \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET, \
 			(XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber),\
@@ -330,18 +330,18 @@ XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Enable the interrupt for a timer counter.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_EnableIntr(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Enable the interrupt for a timer counter.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_EnableIntr(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_EnableIntr(BaseAddress, TmrCtrNumber)			    \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,   \
 			(XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber),  \
@@ -349,18 +349,18 @@ XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Disable the interrupt for a timer counter.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_DisableIntr(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Disable the interrupt for a timer counter.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_DisableIntr(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_DisableIntr(BaseAddress, TmrCtrNumber)			   \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,  \
 	(XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber),		   \
@@ -369,20 +369,20 @@ XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Cause the timer counter to load it's Timer Counter Register with the value
-* in the Load Register.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		   zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @return	None.
-*
-* @note		C-Style signature:
-* 		void XTmrCtr_LoadTimerCounterReg(u32 BaseAddress,
-					u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Cause the timer counter to load it's Timer Counter Register with the value
+ * in the Load Register.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		   zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @return	None.
+ *
+ * @note		C-Style signature:
+ * 		void XTmrCtr_LoadTimerCounterReg(u32 BaseAddress,
+ u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_LoadTimerCounterReg(BaseAddress, TmrCtrNumber)		  \
 	XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET, \
 			(XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber),\
@@ -390,17 +390,17 @@ XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber), XTC_TLR_OFFSET)
 
 /****************************************************************************/
 /**
-*
-* Determine if a timer counter event has occurred.  Events are defined to be
-* when a capture has occurred or the counter has roller over.
-*
-* @param	BaseAddress is the base address of the device.
-* @param	TmrCtrNumber is the specific timer counter within the device, a
-*		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
-*
-* @note		C-Style signature:
-* 		int XTmrCtr_HasEventOccurred(u32 BaseAddress, u8 TmrCtrNumber);
-*****************************************************************************/
+ *
+ * Determine if a timer counter event has occurred.  Events are defined to be
+ * when a capture has occurred or the counter has roller over.
+ *
+ * @param	BaseAddress is the base address of the device.
+ * @param	TmrCtrNumber is the specific timer counter within the device, a
+ *		zero based number, 0 - (XTC_DEVICE_TIMER_COUNT - 1).
+ *
+ * @note		C-Style signature:
+ * 		int XTmrCtr_HasEventOccurred(u32 BaseAddress, u8 TmrCtrNumber);
+ *****************************************************************************/
 #define XTmrCtr_HasEventOccurred(BaseAddress, TmrCtrNumber)		\
 		((XTmrCtr_ReadReg((BaseAddress), (TmrCtrNumber),	\
 		XTC_TCSR_OFFSET) & XTC_CSR_INT_OCCURED_MASK) ==		\
