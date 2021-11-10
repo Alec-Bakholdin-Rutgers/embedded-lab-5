@@ -129,7 +129,7 @@ int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
 	u32 Period;
 	u32 HighTime;
 	u32 Divisor;
-	u32 StepIndex = 0;
+	u32 StepIndex;
 
 	while(1) {
 
@@ -140,7 +140,7 @@ int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
 		XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period, HighTime);
 		XTmrCtr_PwmEnable(TmrCtrInstancePtr);
 
-		StepIndex = (StepIndex + 1) % STEPS_PER_PERIOD;
+		StepIndex = (StepIndex++) % STEPS_PER_PERIOD;
 
 		while(1) {
 			if(PeriodTimerHit == TRUE && HighTimerHit == TRUE) {
