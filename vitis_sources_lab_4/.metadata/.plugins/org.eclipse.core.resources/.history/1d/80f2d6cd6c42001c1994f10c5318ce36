@@ -63,6 +63,8 @@ int main(void) {
 
 
 int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr) {
+
+		u32 DutyCycle;
 		u32 NoOfCycles;
 		u32 Step;
 		u32 Period;
