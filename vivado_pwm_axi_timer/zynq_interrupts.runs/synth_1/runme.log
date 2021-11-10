@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log zynq_interrupt_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_interrupt_system_wrapper.tcl
+
