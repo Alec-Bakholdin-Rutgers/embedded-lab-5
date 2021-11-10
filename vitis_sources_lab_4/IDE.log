@@ -1022,3 +1022,27 @@ Reason: No Platforms Found.
 
 10:05:26 INFO  : Platform repository initialization has completed.
 10:05:26 INFO  : Registering command handlers for Vitis TCF services
+10:08:22 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+10:08:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+10:08:24 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:11:24 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+10:11:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+10:11:24 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+10:11:24 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+10:11:26 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:14:26 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+10:14:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+10:14:26 ERROR : xsct server communication channel is not established.
+10:14:27 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
+
+10:17:27 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+10:17:27 ERROR : Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established.
+10:17:27 ERROR : Exception raised in executing the command =Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established. 
+10:24:19 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer'...
+10:24:19 ERROR : Failed to get platform details for the project 'pwm_axi_timer'. Cannot sync application flags.

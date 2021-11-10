@@ -182,11 +182,7 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION);
 	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION);
 
-	XTmrCtr_PwmEnable(TmrCtrInstancePtr);
-	XTrmCtr_SetResetValue(TimrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
-	XTrmCtr_SetResetValue(TimrCtrInstancePtr, TMRCTR_1, PWM_PERIOD);
-	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_0);
-	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_1);
+
 
 	/* Disable interrupts */
 	TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
@@ -210,10 +206,9 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 ******************************************************************************/
 static void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 {
-	xil_printf("TmrCtrNumber: %d\n", TmrCtrNumber);
 	/* Mark if period timer expired */
 	if (TmrCtrNumber == TMRCTR_0) {
-		LowTimerHit = TRUE;
+		PeriodTimerHit = TRUE;
 	}
 
 	/* Mark if high time timer expired */
@@ -248,6 +243,43 @@ static int TmrCtrSetupIntrSystem(INTC *IntcInstancePtr,
 {
 	 int Status;
 
+#ifdef XPAR_INTC_0_DEVICE_ID
+	/*
+	 * Initialize the interrupt controller driver so that
+	 * it's ready to use, specify the device ID that is generated in
+	 * xparameters.h
+	 */
+	Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect a device driver handler that will be called when an interrupt
+	 * for the device occurs, the device driver handler performs the
+	 * specific interrupt processing for the device
+	 */
+	Status = XIntc_Connect(IntcInstancePtr, IntrId,
+				(XInterruptHandler)XTmrCtr_InterruptHandler,
+				(void *)TmrCtrInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Start the interrupt controller such that interrupts are enabled for
+	 * all devices that cause interrupts, specific real mode so that
+	 * the timer counter can cause interrupts through the interrupt
+	 * controller
+	 */
+	Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Enable the interrupt for the timer counter */
+	XIntc_Enable(IntcInstancePtr, IntrId);
+#else
 	XScuGic_Config *IntcConfig;
 
 	/*
@@ -281,6 +313,7 @@ static int TmrCtrSetupIntrSystem(INTC *IntcInstancePtr,
 
 	/* Enable the interrupt for the Timer device */
 	XScuGic_Enable(IntcInstancePtr, IntrId);
+#endif /* XPAR_INTC_0_DEVICE_ID */
 
 	/* Initialize the exception table */
 	Xil_ExceptionInit();
@@ -315,5 +348,9 @@ static int TmrCtrSetupIntrSystem(INTC *IntcInstancePtr,
 void TmrCtrDisableIntr(INTC *IntcInstancePtr, u16 IntrId)
 {
 	/* Disconnect the interrupt for the timer counter */
+#ifdef XPAR_INTC_0_DEVICE_ID
+	XIntc_Disconnect(IntcInstancePtr, IntrId);
+#else
 	XScuGic_Disconnect(IntcInstancePtr, IntrId);
+#endif
 }

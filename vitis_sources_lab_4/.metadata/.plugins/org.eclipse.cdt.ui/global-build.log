@@ -1,24 +1,16 @@
-Nothing to build in platform 'zynq_interrupt_system_wrapper'
+10:24:15 **** Build of project zynq_interrupt_system_wrapper ****
+buildplatform.bat -1 zynq_interrupt_system_wrapper  
+No connection could be made because the target machine actively refused it
+    while executing
+"error $message"
+    (procedure "connect" line 143)
+    invoked from within
+"connect -u TCP:localhost:$XSDB_PORT"
+    invoked from within
+"if { $iswindows == 1 } {    
 
-22:24:48 **** Incremental Build of configuration Debug for project pwm_axi_timer ****
-make all 
-make --no-print-directory pre-build
-a9-linaro-pre-build-step
- 
-make --no-print-directory main-build
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/user/lab-5/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/sw/zynq_interrupt_system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: pwm_axi_timer.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/user/lab-5/vitis_sources_lab_4/zynq_interrupt_system_wrapper/export/zynq_interrupt_system_wrapper/sw/zynq_interrupt_system_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "pwm_axi_timer.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: pwm_axi_timer.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size pwm_axi_timer.elf  |tee "pwm_axi_timer.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31950	   1936	  22656	  56542	   dcde	pwm_axi_timer.elf
-Finished building: pwm_axi_timer.elf.size
- 
+    set XSDB_PORT [lindex $argv 0]
+    set PLATFORM_NAME [lindex $argv 1]
+    set arglen [llength $argv]
+    set lastind..."
+    (file "F:/Xilinx/Vitis/2021.1\scripts\vitis\util\buildplatform.tcl" line 11)

@@ -1,2 +1,19 @@
-Nothing to build in platform 'zynq_interrupt_system_wrapper'
+10:24:15 **** Build of project zynq_interrupt_system_wrapper ****
+buildplatform.bat -1 zynq_interrupt_system_wrapper  
+No connection could be made because the target machine actively refused it
+    while executing
+"error $message"
+    (procedure "connect" line 143)
+    invoked from within
+"connect -u TCP:localhost:$XSDB_PORT"
+    invoked from within
+"if { $iswindows == 1 } {    
+
+    set XSDB_PORT [lindex $argv 0]
+    set PLATFORM_NAME [lindex $argv 1]
+    set arglen [llength $argv]
+    set lastind..."
+    (file "F:/Xilinx/Vitis/2021.1\scripts\vitis\util\buildplatform.tcl" line 11)
+
+10:24:19 Build Finished (took 3s.879ms)
 
