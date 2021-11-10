@@ -175,12 +175,17 @@ int TmrCtrPwmExample(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr,
 							TmrCtrInstancePtr);
 
 	/* Enable the interrupt of the timer counter */
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
+	//XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
+	//XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION | XTC_PWM_OPTION | XTC_DOWN_COUNT_OPTION | XTC_EXT_COMPARE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION);
 
+	XTmrCtr_PwmConfigure(TmrCtrInstancePtr, PWM_PERIOD, PWM_PERIOD/2);
 	XTmrCtr_PwmEnable(TmrCtrInstancePtr);
-	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
-	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_1, PWM_PERIOD);
+
+	//XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_0, PWM_PERIOD);
+	//XTmrCtr_SetResetValue(TmrCtrInstancePtr, TMRCTR_1, PWM_PERIOD);
+
 	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_0);
 	XTmrCtr_Start(TmrCtrInstancePtr, TMRCTR_1);
 
