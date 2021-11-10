@@ -62,7 +62,7 @@ int main(void) {
 }
 
 
-int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr) {
+int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 		u32 DutyCycle;
 		u32 NoOfCycles;

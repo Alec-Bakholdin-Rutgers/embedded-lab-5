@@ -77,3 +77,5 @@ timestamp=[2021-11-10 13:08:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.811, d
 timestamp=[2021-11-10 13:08:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.034, duration_ms=34, data={}
 timestamp=[2021-11-10 13:11:43], mode=PLATFORM_GENERATION, duration=0:00:04.576, duration_ms=4576, data={name=zynq_interrupt_system_wrapper_1}
 timestamp=[2021-11-10 13:21:37], mode=PLATFORM_GENERATION, duration=0:00:01.815, duration_ms=1815, data={name=zynq_interrupt_system_wrapper_1}
+timestamp=[2021-11-10 16:17:52], mode=PLATFORM_GENERATION, duration=0:00:02.319, duration_ms=2319, data={name=zynq_interrupt_system_wrapper_1}
+timestamp=[2021-11-10 16:17:52], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=pwm_axi_timer_2, configuration=Debug, clean_build=true}

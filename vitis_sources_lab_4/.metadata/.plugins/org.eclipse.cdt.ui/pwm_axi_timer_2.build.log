@@ -1,25 +1,7 @@
-13:00:15 **** Build of configuration Debug for project pwm_axi_timer_2 ****
-make all 
-make --no-print-directory pre-build
-a9-linaro-pre-build-step
- 
-make --no-print-directory main-build
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/export/zynq_interrupt_system_wrapper_1/sw/zynq_interrupt_system_wrapper_1/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: pwm_axi_timer_2.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/user/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/export/zynq_interrupt_system_wrapper_1/sw/zynq_interrupt_system_wrapper_1/standalone_ps7_cortexa9_0/bsplib/lib -o "pwm_axi_timer_2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: pwm_axi_timer_2.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size pwm_axi_timer_2.elf  |tee "pwm_axi_timer_2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31950	   1936	  22656	  56542	   dcde	pwm_axi_timer_2.elf
-Finished building: pwm_axi_timer_2.elf.size
- 
+16:17:52 **** Clean-only build of configuration Debug for project pwm_axi_timer_2 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  pwm_axi_timer_2.elf.size  pwm_axi_timer_2.elf
+' '
 
-13:00:16 Build Finished (took 769ms)
+16:17:52 Build Finished (took 206ms)
 

@@ -1236,3 +1236,4 @@ Reason: No Platforms Found.
 13:11:43 ERROR : Failed to get platform details for the project 'pwm_axi_timer_2'. Cannot sync application flags.
 13:21:37 INFO  : Checking for BSP changes to sync application flags for project 'pwm_axi_timer_2'...
 13:21:37 ERROR : Failed to get platform details for the project 'pwm_axi_timer_2'. Cannot sync application flags.
+16:17:52 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.

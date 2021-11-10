@@ -2658,3 +2658,8 @@ LOG::2021-11-10.13:11:43::SCWPlatform::Started generating the artifacts platform
 ERROR::2021-11-10.13:11:43::SCWMssOS::Error: Qemu arguments File given  /home/software/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt do not exist
 LOG::2021-11-10.13:21:37::SCWPlatform::Started generating the artifacts platform zynq_interrupt_system_wrapper_1
 ERROR::2021-11-10.13:21:37::SCWMssOS::Error: Qemu arguments File given  /home/software/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt do not exist
+TRACE::2021-11-10.16:17:52::SCWBDomain::System Command Ran  C:&  cd  C:/lab4/vitis_sources_lab_4/zynq_interrupt_system_wrapper_1/zynq_fsbl & make clean
+TRACE::2021-11-10.16:17:52::SCWBDomain::rm -rf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o  pcap.o  fsbl_handoff.o  zyn
+TRACE::2021-11-10.16:17:52::SCWBDomain::q_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+
+ERROR::2021-11-10.16:17:52::SCWSystem::Error in Processing the domain zynq_fsbl
