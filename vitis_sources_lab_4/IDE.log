@@ -1176,3 +1176,8 @@ Reason: xsct server communication channel is not established.
 12:03:21 ERROR : xsct server communication channel is not established.
 12:03:22 ERROR : (XSDB Server)couldn't read file "C:\College\2021": no such file or directory
 
+12:06:22 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:06:22 ERROR : Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established.
+12:06:22 ERROR : Exception raised in executing the command =Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established. 

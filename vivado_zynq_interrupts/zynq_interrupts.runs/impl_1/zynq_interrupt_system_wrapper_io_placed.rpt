@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date                      : Wed Nov  3 21:49:30 2021
-| Host                      : ece36 running 64-bit Ubuntu 20.04.2 LTS
+| Tool Version              : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date                      : Wed Nov 10 12:11:38 2021
+| Host                      : ALEC-PC running 64-bit major release  (build 9200)
 | Command                   : report_io -file zynq_interrupt_system_wrapper_io_placed.rpt
 | Design                    : zynq_interrupt_system_wrapper
 | Device                    : xc7z010

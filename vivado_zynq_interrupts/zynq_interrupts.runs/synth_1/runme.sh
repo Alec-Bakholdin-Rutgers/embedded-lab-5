@@ -6,10 +6,14 @@
 # Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/home/software/Xilinx/Vitis/2021.1/bin:/home/software/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/home/software/Xilinx/Vivado/2021.1/bin
+  PATH=F:/Xilinx/Vitis/2021.1/bin;F:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2021.1/bin
 else
-  PATH=/home/software/Xilinx/Vitis/2021.1/bin:/home/software/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/home/software/Xilinx/Vivado/2021.1/bin:$PATH
+  PATH=F:/Xilinx/Vitis/2021.1/bin;F:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2021.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/lab-5/vivado_zynq_interrupts/zynq_interrupts.runs/synth_1'
+HD_PWD='C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
