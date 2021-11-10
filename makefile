@@ -5,5 +5,6 @@ send:
 
 recv:
 	git fetch --all
+	git branch -D backup-main
 	git branch backup-main
 	git reset --hard origin/main
