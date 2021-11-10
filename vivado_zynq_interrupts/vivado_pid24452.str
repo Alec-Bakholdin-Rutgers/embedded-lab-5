@@ -1,0 +1,170 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 24452
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Nov 10 12:32:23 EST 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 3840x2160
+Screen resolution (DPI): 150
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	F:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	F:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	abakh
+User home directory: C:/Users/abakh
+User working directory: C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2021.1
+RDI_DATADIR: F:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: F:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/abakh/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/abakh/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/abakh/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	F:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/vivado.log
+Vivado journal file: 	C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/vivado.jou
+Engine tmp dir: 	C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/.Xil/Vivado-24452-ALEC-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: F:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2021.1
+XILINX_SDK: F:/Xilinx/Vitis/2021.1
+XILINX_VITIS: F:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: F:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,269 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 119 MB (+121831kb) [00:00:05]
+// [Engine Memory]: 1,269 MB (+1178741kb) [00:00:05]
+// Opening Vivado Project: C:\College\2021 Fall\Embedded Systems 2\lab4\vivado_zynq_interrupts\zynq_interrupts.xpr. Version: Vivado v2021.1 
+// bz (cs):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 146 MB (+22037kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  4722 ms.
+// Tcl Message: open_project {C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,269 MB. GUI used memory: 99 MB. Current time: 11/10/21, 12:32:29 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1257.820 ; gain = 0.000 
+// Project name: zynq_interrupts; location: C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 158 MB (+5551kb) [00:00:18]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// PAPropertyPanels.initPanels (constraints.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 2, false); // D
+// [GUI Memory]: 177 MB (+11396kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 4, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 186 MB (+494kb) [00:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  1417 ms.
+selectCodeEditor("constraints.xdc", 954, 139); // bP
+selectCodeEditor("constraints.xdc", 782, 150); // bP
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // bP
+// Elapsed time: 44 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v), zynq_interrupt_system_i : zynq_interrupt_system (zynq_interrupt_system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v), zynq_interrupt_system_i : zynq_interrupt_system (zynq_interrupt_system.bd), zynq_interrupt_system (zynq_interrupt_system.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v), zynq_interrupt_system_i : zynq_interrupt_system (zynq_interrupt_system.bd), zynq_interrupt_system (zynq_interrupt_system.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v), zynq_interrupt_system_i : zynq_interrupt_system (zynq_interrupt_system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_interrupt_system_wrapper (zynq_interrupt_system_wrapper.v), zynq_interrupt_system_i : zynq_interrupt_system (zynq_interrupt_system.bd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd} 
+// Tcl Message: Reading block design file <C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Successfully read diagram <zynq_interrupt_system> from block design file <C:/College/2021 Fall/Embedded Systems 2/lab4/vivado_zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interrupt_system/zynq_interrupt_system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3242 ms.
+// JavaFX intialization before: 1636565617275
+// JavaFX initialization after: 1636565617710
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1257.820 ; gain = 0.000 
+dismissDialog("Open Block Design"); // bz
+// [Engine Memory]: 1,341 MB (+9476kb) [00:01:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 148 MB. Current time: 11/10/21, 12:33:39 PM EST

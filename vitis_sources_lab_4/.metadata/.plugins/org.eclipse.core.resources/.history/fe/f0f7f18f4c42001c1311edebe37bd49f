@@ -59,6 +59,7 @@ typedef struct {
  * the options. These options are table driven to allow easy maintenance and
  * expansion of the options.
  */
+#define XTC_PWM_OPTION				0x00000200UL
 
 static Mapping OptionsTable[] = {
 	{XTC_CASCADE_MODE_OPTION, XTC_CSR_CASC_MASK},
@@ -68,7 +69,8 @@ static Mapping OptionsTable[] = {
 	 XTC_CSR_EXT_CAPTURE_MASK},
 	{XTC_INT_MODE_OPTION, XTC_CSR_ENABLE_INT_MASK},
 	{XTC_AUTO_RELOAD_OPTION, XTC_CSR_AUTO_RELOAD_MASK},
-	{XTC_EXT_COMPARE_OPTION, XTC_CSR_EXT_GENERATE_MASK}
+	{XTC_EXT_COMPARE_OPTION, XTC_CSR_EXT_GENERATE_MASK},
+	{XTC_PWM_OPTION, XTC_CSR_ENABLE_PWM_MASK}
 };
 
 /* Create a constant for the number of entries in the table */

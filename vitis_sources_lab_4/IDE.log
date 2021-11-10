@@ -1194,3 +1194,21 @@ Reason: No Platforms Found.
 
 12:27:04 INFO  : Platform repository initialization has completed.
 12:27:04 INFO  : Registering command handlers for Vitis TCF services
+12:30:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:30:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+12:30:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\College\2021" line 1)
+
+12:33:04 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+12:33:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\College\2021 Fall\Embedded Systems 2\lab4\vitis_sources_lab_4\temp_xsdb_launch_script.tcl
+12:33:04 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+12:33:04 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+12:33:05 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\College\2021" line 1)
+
