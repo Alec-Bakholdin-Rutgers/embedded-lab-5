@@ -132,7 +132,7 @@ int TmrCtrPwmLogic(XTmrCtr *TmrCtrInstancePtr) {
 	u32 Period;
 	u32 HighTime;
 	u64 WaitCount;
-	int Status = XST_FAILURE;
+	int Status;
 
 	Div = DUTYCYCLE_DIVISOR;
 
