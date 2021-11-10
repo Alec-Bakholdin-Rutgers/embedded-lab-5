@@ -1,0 +1,82 @@
+
+
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+
+/* Hardware-related constants */
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
+
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC                    XScuGic
+#define INTC_HANDLER            XScuGic_InterruptHandler
+
+#define TMRCTR_0				0
+#define TMRCTR_1				1
+
+/* Functional constants that affect the program */
+#define PWM_PERIOD				(u32)5e6
+#define CYCLES_PER_STEP			10
+#define STEPS_PER_PULSE			10
+#define WAIT_COUNT				PWM_PERIOD
+
+
+/* Function definitions */
+
+static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId);
+static void TmrCtrInit(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId);
+static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrId);
+
+int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr);
+static void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+
+int main(void) {
+	xil_printf("Setting up interrupt handler\n");
+	xil_printf("Initializing Timer");
+	xil_printf("Executing code...");
+	xil_printf("Done\n");
+}
+
+
+
+
+
+
+static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId) {
+	XScuGic_Config *IntcConfig;
+
+	// lookup and initialize config; attach it to the interrupt controller
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+
+	// set priority and trigger type of interrupt
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId, 0xA0, 0x3);
+
+	// connect interrupt to the timer, tell the processor which interrupt handler to use(found in xtmrctr.h)
+	XScuGic_Connect(IntcInstancePtr, IntrId, (Xil_ExceptionHandler)XTmrCtr_InterruptHandler, TmrCtrInstancePtr);
+	XScuGic_Enable(IntcInstancePtr, IntrId);
+
+	// register and initialize exception table
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)INTC_HANDLER, IntcInstancePtr);
+	Xil_ExceptionEnable();
+}
+
+static void TmrCtrInit(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId) {
+	// initialize timer and attach interrupt handler
+	XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+	TmrCtrSetupIntrSystem(IntcInstancePtr, TmrCtrInstancePtr, DeviceId, IntrId);
+	XTmrCtr_SetHandler(TmrCtrInstancePtr, TimerCounterHandler, TmrCtrInstancePtr);
+
+	// enable interrupt for each timer counter
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_INT_MODE_OPTION);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_1, XTC_INT_MODE_OPTION);
+}
+
+static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrID) {
+	XTmrCtr_PwmDisable(TmrCtrInstancePtr);
+	XScuGic_Disconnect(IntcInstancePtr, IntrId);
+}

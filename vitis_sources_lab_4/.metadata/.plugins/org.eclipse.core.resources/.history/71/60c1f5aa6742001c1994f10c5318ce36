@@ -1,0 +1,27 @@
+
+
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+
+/* Hardware-related constants */
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
+
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC                    XScuGic
+#define INTC_HANDLER            XScuGic_InterruptHandler
+
+#define TMRCTR_0				0
+#define TMRCTR_1				1
+
+/* Functional constants that affect the program */
+#define PWM_PERIOD				(u32)5e6
+#define CYCLES_PER_STEP
+
+
+int main(void) {
+
+}

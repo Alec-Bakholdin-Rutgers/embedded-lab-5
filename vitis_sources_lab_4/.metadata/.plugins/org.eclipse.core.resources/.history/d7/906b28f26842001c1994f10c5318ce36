@@ -1,0 +1,47 @@
+
+
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+
+/* Hardware-related constants */
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
+
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC                    XScuGic
+#define INTC_HANDLER            XScuGic_InterruptHandler
+
+#define TMRCTR_0				0
+#define TMRCTR_1				1
+
+/* Functional constants that affect the program */
+#define PWM_PERIOD				(u32)5e6
+#define CYCLES_PER_STEP			10
+#define STEPS_PER_PULSE			10
+#define WAIT_COUNT				PWM_PERIOD
+
+
+/* Function definitions */
+int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr);
+static void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+static int TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId);
+static void TmrCtrDisableInterrupt(INTC *IntcInstancePtr, u16 IntrId);
+
+
+int main(void) {
+
+}
+
+/*
+ * Set up interrupt function
+ */
+static int TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId) {
+	XScuGic_Config *IntcConfig;
+
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId, 0xA0, 0x3);
+}
