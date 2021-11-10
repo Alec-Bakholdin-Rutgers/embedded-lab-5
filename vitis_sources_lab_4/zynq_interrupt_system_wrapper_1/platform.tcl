@@ -20,3 +20,4 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 catch {platform remove zynq_interrupt_system_wrapper}
+platform generate

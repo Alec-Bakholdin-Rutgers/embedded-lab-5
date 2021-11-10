@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="scw_hwspec_file_selection" value="/home/user/lab-5/vivado_zynq_interrupts"/>
+	<item key="scw_hwspec_file_selection" value="/home/user/lab4/vivado_zynq_interrupts"/>
+	<item key="scw_hwspec" value="/home/user/lab4/vivado_zynq_interrupts"/>
 </section>

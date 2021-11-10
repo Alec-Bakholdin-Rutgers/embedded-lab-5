@@ -7,5 +7,5 @@
 	<item key="pwm_axi_timer_system-partial_bit" value="false"/>
 	<item key="pwm_axi_timer_system-skip_rev_check" value="false"/>
 	<item key="programfpga.sdxproject" value="pwm_axi_timer_system"/>
-	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo 210279A42B57A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo-210279A42B57A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo-210279A42B57A-13722093-0&quot;}}]}"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo 210279A42CAAA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo-210279A42CAAA-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo-210279A42CAAA-13722093-0&quot;}}]}"/>
 </section>

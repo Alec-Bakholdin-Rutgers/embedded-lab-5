@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="200"/>
 		<list key="findhistory">
+			<item value="200"/>
+			<item value="generate"/>
+			<item value="_MASK"/>
+			<item value="_Mask"/>
+			<item value="Xtrm"/>
+			<item value="TimrCtrInstanceptr"/>
+			<item value="lowtimerhit"/>
 			<item value="GPIO`"/>
 			<item value="GPIO"/>
 			<item value="  status = XGpio_Initialize(&amp;LEDInst, LEDS_DEVICE_ID);"/>
