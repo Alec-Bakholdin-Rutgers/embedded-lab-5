@@ -69,7 +69,7 @@
 #define PWM_PERIOD              500000      /* PWM period in (500 ms) */
 #define TMRCTR_0                0            /* Timer 0 ID */
 #define TMRCTR_1                1            /* Timer 1 ID */
-#define CYCLE_PER_DUTYCYCLE     50           /* Clock cycles per duty cycle */
+#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
 #define MAX_DUTYCYCLE           100          /* Max duty cycle */
 #define DUTYCYCLE_DIVISOR       100            /* Duty cycle Divisor */
 #define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
@@ -129,7 +129,7 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 		u32 DutyCycle;
 		u32 NoOfCycles;
-		u32 Div = 0;
+		u32 Div;
 		u32 Period;
 		u32 HighTime;
 		u64 WaitCount;
@@ -141,12 +141,13 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 		 * proportionally. This is done until duty cycle is reached upto
 		 * MAX_DUTYCYCLE
 		 */
+		Div = DUTYCYCLE_DIVISOR;
 
 		/* Configure PWM */
 		while(1){
 			/* Fail check for 0 divisor */
-			if (Div == DUTYCYCLE_DIVISOR) {
-				Div = 0;
+			if (Div <= 0) {
+				Div = DUTYCYCLE_DIVISOR;
 			}
 
 			/* Disable PWM for reconfiguration */
@@ -154,7 +155,7 @@ int TmrCtrLogic(XTmrCtr *TmrCtrInstancePtr) {
 
 			/* Configure PWM */
 			Period = PWM_PERIOD;
-			HighTime = (float)((float)Div++/(float)DUTYCYCLE_DIVISOR)*PWM_PERIOD;
+			HighTime = (float)((float)Div--/(float)DUTYCYCLE_DIVISOR)*PWM_PERIOD;
 			DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period,
 									HighTime);
 			if (Status != XST_SUCCESS) {
