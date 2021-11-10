@@ -27,7 +27,7 @@
 
 /* Function definitions */
 static void TmrCtrInit(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId);
-static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId);
+static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId);
 static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrId);
 
 int TmrCtrPwm(XTmrCtr *TmrCtrInstancePtr);
@@ -150,7 +150,7 @@ static void TmrCtrInit(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 De
 }
 
 
-static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 DeviceId, u16 IntrId) {
+static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *InstancePtr, u16 DeviceId, u16 IntrId) {
 	XScuGic_Config *IntcConfig;
 
 	// lookup and initialize config; attach it to the interrupt controller
@@ -171,7 +171,7 @@ static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstanceP
 }
 
 
-static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrId) {
+static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrID) {
 	XTmrCtr_PwmDisable(TmrCtrInstancePtr);
 	XScuGic_Disconnect(IntcInstancePtr, IntrId);
 }

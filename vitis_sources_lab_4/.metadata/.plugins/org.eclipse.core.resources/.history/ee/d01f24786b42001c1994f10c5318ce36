@@ -171,7 +171,7 @@ static void TmrCtrSetupInterrupt(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstanceP
 }
 
 
-static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrId) {
+static void TmrCtrDisable(INTC *IntcInstancePtr, XTmrCtr *TmrCtrInstancePtr, u16 IntrID) {
 	XTmrCtr_PwmDisable(TmrCtrInstancePtr);
 	XScuGic_Disconnect(IntcInstancePtr, IntrId);
 }
